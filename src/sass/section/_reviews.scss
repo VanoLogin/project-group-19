@@ -1,0 +1,82 @@
+.reviews{
+    background-color: #1c1d20;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    @include tablet{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 343px;
+    margin: 0 auto;
+
+    @include tablet{
+        max-width: 704px;
+    }
+
+    @include desktop{
+        max-width: 1440px;
+    }
+}
+
+.header-reviews{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.4);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    max-width: 343px;
+}
+
+.swiper-container{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.swiper-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+    justify-content: center;
+
+    @include tablet{
+        gap: 20px;
+    }
+}
+
+.swiper-slide{
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 20px;
+    padding: 32px 24px;
+    max-width: 343px;
+    padding: 32px 24px 32px 24px;
+}
+
+.review-person-photo{
+    margin-bottom: 32px;
+}
+
+.review-textblock{
+    max-width: 295px;
+    // height: 100%;
+}
+
+.swiper-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+
+    @include tablet{
+        gap: 20px;
+    }
+}
