@@ -1,0 +1,23 @@
+//utils style
+
+@import './utils/resetStyle';
+@import './utils/mixinMedia';
+@import './utils/vars';
+
+//components styles
+
+@import './components/container';
+@import './components/titles';
+
+
+// section styles
+
+@import './section/header';
+@import './section/hero';
+@import './section/aboutMe';
+@import './section/benefits';
+@import './section/projects';
+@import './section/faQ';
+@import './section/covers';
+@import './section/reviews';
+@import './section/workTogether';

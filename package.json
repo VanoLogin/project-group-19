@@ -9,12 +9,16 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.5.2",
-    "glob": "^8.1.0"
+    "glob": "^8.1.0",
+    "sass": "^1.74.1",
+    "vite": "^4.5.2"
   },
   "author": "Login Ivan <igolden197@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
+    "axios": "^1.6.8",
+    "swiper": "^11.1.1",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
