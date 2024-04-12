@@ -1,0 +1,94 @@
+.list{
+    list-style-type: none;
+    gap: 16px;
+}
+/*==========benefits mobile styles========*/
+  @media screen and (min-width: 320px) {
+    .container {
+      padding-top: 17.5px;
+      padding-bottom: 17.5px;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    }
+    .benefits{
+        padding-top: 0px;
+        padding-left: 32px;
+        background-color: #1C1D20;
+    }
+    .benefits-name-h{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 32px;
+        width: 284px;
+        height: 24px;
+        text-align: left top;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: rgba(250, 250, 250, 0.4);
+
+    }
+    .benefits-name{
+        padding: 24px 24px 24px 24px;
+        max-width: 344px;
+        height: 270px;
+        background-color: rgb(36, 37, 39);
+        gap: 16px;
+
+    }
+    .benefits-item{
+        width: 48px;
+        height: 48px;
+        border-radius: 20px;
+        margin-bottom: 64px;
+
+    }
+    .benefits-content{
+        margin-bottom: 8px;
+        width: 296px;
+        height: 30px;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: rgb(250, 250, 250)
+    }
+    .benefits-content-text{
+        width:296px ;
+        height: 72px; 
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: rgba(250, 250, 250, 0.6);
+    }
+    .benefits-btn{
+        display: inline-flex;
+        margin-top: 64px;
+        width: 187px;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+        background-color: 1px	Inside
+        rgba(250, 250, 250, 0.2);
+
+    }
+    .benefits-btn-descr{
+        margin-left: 36px;
+        margin-right: 36px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        width: 115px;
+        height: 19px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+        color: rgb(250, 250, 250);
+    }
+
