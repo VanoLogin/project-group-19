@@ -1,0 +1,184 @@
+$text-color: #fafafa;
+
+// section -HEADER- and -HERO- BACKGROUND
+.header-hero-wrapper {
+  overflow: hidden;
+  background: linear-gradient(
+    270deg,
+    rgb(28, 29, 32) 49.692%,
+    rgb(105, 41, 45) 67.704%,
+    rgb(237, 59, 68) 99.891%
+  );
+}
+
+// ----------------------------------------------------------------
+body {
+  margin: 0 0;
+}
+
+// ----------REMOVE AFTER------------------------------------------------
+@include tel {
+  .page-header > .container {
+    max-width: 375px;
+    width: auto;
+  }
+
+  @include tablet {
+    .page-header > .container {
+      max-width: 768px;
+      width: auto;
+    }
+  }
+
+  @include desktop {
+    .page-header > .container {
+      max-width: 1440px;
+      width: auto;
+    }
+  }
+}
+
+// ----------------------------------------------------------
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+
+  .text-logo-wrapper {
+    display: flex;
+  }
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  button {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    text-align: start;
+    height: 0;
+  }
+
+  .logo-text {
+    font-family: 'Inter Tight';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: $text-color;
+    margin-left: 8px;
+  }
+
+  .header-menu-btn {
+    display: none;
+
+    font-family: 'Inter Tight';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 17px;
+    color: $text-color;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  .header-order-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -2%;
+    text-align: left;
+    color: $text-color;
+    padding: 0 24px;
+    border-radius: 60px;
+    background: rgb(237, 59, 68);
+    height: 55px;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  .icon-burger-btn {
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+// .navigation-menu {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 999999;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #fff;
+//   transform: translateX(100%);
+//   transition: ease-in 300ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .mobile-menu.is-open {
+//   transform: translateX(0%);
+// }
+
+// ----------------------------------------------------------------
+/* for mobile menu if needed
+  .mobile-menu-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999999;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+
+      transform: translateX(100%);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu-wrapper.is-open {
+      transform: translateX(0%);
+  }
+
+  .backdrop.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+  }
+
+  .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+  }
+*/
+
+// @media screen and (max-width: 375px) {
+//   .page-header > .container {
+//     margin: 0 auto;
+//     padding: 0 16px;
+//   }
+// }

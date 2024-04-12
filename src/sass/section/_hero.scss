@@ -1,0 +1,90 @@
+$text-color: #fafafa;
+
+// REMOVE AFTER----------------------------------------------------------------
+@include tel {
+  .hero > .container {
+    max-width: 375px;
+    width: auto;
+  }
+  @include tablet {
+    .hero > .container {
+      max-width: 768px;
+      width: auto;
+    }
+  }
+
+  @include desktop {
+    .hero > .container {
+      max-width: 1440px;
+      width: auto;
+    }
+  }
+}
+
+// ----------------------------------------------------------------
+
+@media screen and (max-width: 369px) {
+  .socials-list {
+    flex-wrap: wrap;
+  }
+}
+
+.hero-title {
+  margin-bottom: 212px;
+  margin-top: 169px;
+
+  @include tablet {
+    margin-bottom: 187px;
+    margin-top: 188px;
+  }
+
+  @include desktop {
+    padding: 0 146px;
+    margin-bottom: 243px;
+  }
+}
+
+.hero-title-socials-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .socials-list {
+    display: flex;
+    gap: 4px;
+    row-gap: 32px;
+    margin-bottom: 42px;
+
+    @include tablet {
+      align-self: flex-end;
+    }
+
+    li {
+      font-family: 'Inter Tight';
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      text-align: left;
+      letter-spacing: -0.02em;
+      color: $text-color;
+    }
+
+    li:first-child > a {
+      padding: 10px 12px;
+    }
+
+    li:nth-child(4) > a {
+      padding: 10px 9px;
+    }
+
+    li:last-child > a {
+      padding: 10px 12px;
+    }
+
+    a {
+      box-sizing: border-box;
+      border: 1px solid rgba(250, 250, 250, 0.2);
+      border-radius: 60px;
+      padding: 10px;
+    }
+  }
+}
