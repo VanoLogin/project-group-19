@@ -1,0 +1,1 @@
+import './js/swipers/reviewsSectionSwiper';
