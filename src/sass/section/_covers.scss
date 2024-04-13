@@ -1,28 +1,32 @@
 body {
     margin: 0;
-    background-color: #1C1D20;
-}
+    background-color: #1C1D20;}
+
   li{
     list-style: none;
   }
   *, *::before, *::after {
     box-sizing: border-box;
   }
+
   .covers-section{
     background-image: url('../../img/covers-img/elements_vectors.png');
     background-size: cover;
     background-repeat: no-repeat; 
     overflow: hidden;
-
+    margin-top: 16px;
+    margin-bottom: 16px;
+    // position: relative;
+    // height: 100vh;
 }
   .marquee {
     justify-content: center;
-    right: -800px;
+    right: -20px;
     max-width: 100%;
     height: 508px;
+    // position: absolute;
     @include tablet {
         height: 960px;
-      
         }
       
   }
@@ -44,6 +48,7 @@ body {
     margin-right: 30px; 
     width: 282px; 
     height: 162px;
+    // overflow: hidden;
     animation-name: animation;
     animation-duration: 15s;
     animation-timing-function: ease-in-out;
