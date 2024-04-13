@@ -1,9 +1,9 @@
 function reviewTemplate(review) {
-    return `<div class="swiper-slide">
+    return `<li class="swiper-slide">
                     <img class="review-person-photo" src="${review.avatar_url}" alt="Person photo">
                         <p class="review-person-name">${review.author}</p>
-                        <p class="">${review.review}</p>
-                </div>`
+                        <p class="review-text">${review.review}</p>
+                </li>`
 }
 
 export function reviewsTemplate(array) {

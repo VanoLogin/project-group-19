@@ -1,7 +1,7 @@
 import axios from "axios";
 import { reviewsTemplate } from "../templates/templateReviews"
 import Swiper from "swiper";
-import 'swiper/css'
+import 'swiper/css';
 
 const reviewsListElem = document.querySelector('.swiper-wrapper');
 async function getReviews() {
@@ -23,12 +23,15 @@ function initSwiper() {
     const swiper = new Swiper('.swiper', {
         // Default parameters
         slidesPerView: 1,
-        spaceBetween: 10,
-        direction: "horizontal",
-          navigation: {
+        spaceBetween: 16,
+        width: 343,
+        loop: false,
+        
+        navigation: {
             nextEl: '.swiper-button-next',
-             prevEl: '.swiper-button-prev',
-  },
+            prevEl: '.swiper-button-prev',
+        },
 
     })
 }
+
