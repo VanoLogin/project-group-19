@@ -7,8 +7,11 @@
     background-color: black;
     transition: right 0.3s ease;
     z-index: 999;
+    background-image: url(../../img/modal-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    &.open {
+    &.is-open {
         right: 0;
     }
 
@@ -20,12 +23,13 @@
         left: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+
         align-items: center;
 
         .modal-menu-list {
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 12px;
             list-style-type: none;
             color: white;
@@ -54,6 +58,7 @@
             right: 18px;
             background: none;
             border: none;
+            padding: 0;
         }
 
         .modal-order-btn {
