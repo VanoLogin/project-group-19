@@ -1,0 +1,227 @@
+:root {
+  --background: #1c1d20;
+  --cards: #242527;
+  --arrow: #3b3b3b;
+  --button-text: #ed3b44;
+  --main-text: #fafafa;
+}
+
+:root {
+  --font-family: 'Inter Tight', sans-serif;
+}
+
+// body {
+//   margin: 0 0;
+// }
+
+// .container {
+//   max-width: 375px;
+//   width: auto;
+//   margin: 0 auto;
+
+//   @include tablet {
+//     max-width: 768px;
+//   }
+//   @include desktop {
+//     max-width: 1440px;
+//     padding: 0 196px;
+//   }
+// }
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+.footer {
+  font-family: var(--font-family);
+  background-color: var(--background);
+  padding: 32px 0 42px;
+
+  @include tablet {
+    padding: 80px 0 187px;
+  }
+}
+
+.footer-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 63px;
+
+  @include tablet {
+    margin-bottom: 18px;
+    width: 542px;
+  }
+}
+
+.footer-header img {
+  width: 44px;
+  height: 44px;
+
+  @include tablet {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.footer-logo {
+  margin-right: 8px;
+
+  @include tablet {
+    margin-right: 20px;
+    margin-bottom: 7px;
+  }
+}
+
+.footer-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-text);
+
+  @include tablet {
+    font-size: 64px;
+    letter-spacing: -0.03em;
+  }
+}
+
+// @media (min-width: 1440px) {
+//   .footer-title h2 {
+//     margin-bottom: 7px;
+//   }
+// }
+
+.footer-title span {
+  color: var(--button-text);
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-form-tabl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.footer-form label {
+  display: block;
+}
+
+.footer input {
+  padding: 0px 0px 20px;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  outline: none;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+
+  &::placeholder {
+    color: rgba(250, 250, 250, 0.6);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  &:hover,
+  &:focus {
+    border: none;
+
+    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+  }
+
+  @include tablet {
+    width: 245px;
+  }
+
+  @include desktop {
+    width: 390px;
+  }
+}
+
+.footer-btn {
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--button-text);
+  color: var(--main-text);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+
+  &:hover {
+    background-color: #e0373f;
+  }
+
+  @include tablet {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.footer-contacts {
+  margin-top: 74px;
+  display: flex;
+  gap: 4px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+
+  @include tablet {
+    margin-top: 36px;
+    gap: 8px;
+    font-size: 16px;
+  }
+}
+
+.footer-link {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+  width: 178px;
+  height: 37px;
+
+  &:hover {
+    border: 1px solid var(--main-text);
+  }
+
+  @include tablet {
+    padding: 18px 32px;
+    width: 239px;
+    height: 55px;
+  }
+}
