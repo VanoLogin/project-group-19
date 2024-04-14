@@ -1,0 +1,107 @@
+.about-me {
+  background-color: #1C1D20;
+  color: #FFF;
+  font-family: 'Arial', sans-serif;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px; 
+  }
+
+  .about-me-section {
+    margin-bottom: 20px;
+
+    .about-me-title {
+      font-size: 18px; 
+      margin-bottom: 5px; 
+    }
+
+    .about-me-toggle {
+      background: none;
+      border: none;
+      color: #FFF;
+      font-size: 18px; 
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      
+      &[aria-expanded="true"] {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .about-me-details {
+      display: none;
+      margin-top: 10px;
+
+      p, ul {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 375px) {
+    .about-me {
+      .container {
+        padding: 50px 15px; 
+      }
+
+      .about-me-section {
+        .about-me-title {
+          font-size: 22px; 
+          margin-bottom: 10px;
+        }
+
+        .about-me-toggle {
+          font-size: 22px; 
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .about-me {
+      .container {
+        padding: 70px 15px; 
+      }
+
+      .about-me-section {
+        .about-me-title {
+          font-size: 24px; 
+        }
+
+        .about-me-toggle {
+          font-size: 24px; 
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .about-me {
+      .container {
+        padding: 90px 15px; 
+      }
+
+      .about-me-section {
+        .about-me-title {
+          font-size: 26px; 
+        }
+
+        .about-me-toggle {
+          font-size: 26px; 
+        }
+      }
+    }
+  }
+}
