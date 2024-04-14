@@ -55,6 +55,7 @@ body {
 .footer-header {
   display: flex;
   margin-bottom: 63px;
+  width: 267px;
 
   @include tablet {
     margin-bottom: 18px;
