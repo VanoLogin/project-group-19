@@ -23,4 +23,5 @@ document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver(observerCallback, observerOptions);
     observer.observe(coversSection);
   });
- 
+
+  

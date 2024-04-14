@@ -1,8 +1,4 @@
-body {
-    margin: 0;
-    background-color: #1C1D20;}
-
-  li{
+li{
     list-style: none;
   }
   *, *::before, *::after {
@@ -13,28 +9,24 @@ body {
     background-size: cover;
     background-repeat: no-repeat; 
     overflow: hidden;
-    padding: 0;
-    // height: 100vh;
-    // position: relative;
-   
 
 }
   .marquee {
     justify-content: center;
     right: -20px;
-    max-width: 100%;
-    height: 508px;
-    // position: absolute;
-    @include tablet {
-        height: 960px;
-        }
+    height: 100vh;
+    // max-width: 100%;
+    // height: 508px;
+    // @include tablet {
+    //     height: 960px;
+    //     }
       
   }
-  
   .marquee__inner {
     display: flex;
-    transform: rotate(16deg) translateY(-280px);
+    transform: rotate(16deg) translateY(-200px);
     margin-bottom: 10px;
+  
   }
   
   .photos-list {
@@ -48,7 +40,6 @@ body {
     margin-right: 30px; 
     width: 282px; 
     height: 162px;
-    // overflow: hidden;
     animation-name: animation;
     animation-duration: 15s;
     animation-timing-function: ease-in-out;
