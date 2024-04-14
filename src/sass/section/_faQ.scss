@@ -55,7 +55,6 @@ body {
   font-weight: 600;
   line-height: 30px;
   width: calc(100% - 45px);
-
 }
 
 .answer-faq {
@@ -65,14 +64,13 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-
 }
 .ac-panel {
   display: block;
   width: 100%;
 }
 .btn {
-  background: url(../../img/javascript.svg) no-repeat;
+  background: url(../../sprite.svg) no-repeat;
   width: 34px;
   height: 34px;
   padding: 7px;
