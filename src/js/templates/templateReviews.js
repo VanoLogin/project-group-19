@@ -1,5 +1,5 @@
 function reviewTemplate(review) {
-    return `<li class="swiper-slide">
+    return `<li class="swiper-slide review-swiper-slide">
                     <img class="review-person-photo" src="${review.avatar_url}" alt="Person photo">
                         <p class="review-person-name">${review.author}</p>
                         <p class="review-text">${review.review}</p>

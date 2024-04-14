@@ -1,52 +1,57 @@
-import axios from "axios";
 import { reviewsTemplate } from "../templates/templateReviews"
 import Swiper from "swiper";
 import { Navigation, Keyboard} from 'swiper/modules';
 import 'swiper/css';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css'; 
 
-let swiper;
-const reviewsListElem = document.querySelector('.swiper-wrapper');
-async function getReviews() {
-    const url = 'https://portfolio-js.b.goit.study/api/reviews';
-    const result = await axios.get(url);
-    return result.data;
-}
+let reviewsSwiper;
+const reviewsListElem = document.querySelector('.reviews-swiper-wrapper');
 
-async function init() {
+initCardEditor();
+
+import getReviews  from '../interfaces/interfaceHttp';
+
+
+async function initCardEditor() {
     try {
         const result = await getReviews();
         const markUp = reviewsTemplate(result);
         reviewsListElem.insertAdjacentHTML('afterbegin', markUp);
         initSwiper()
     } catch {
-        // Change function
-        console.log('Error!')
-    }
+            iziToast.error({
+            position: 'topCenter',
+            title: 'Error',
+            message: 'Not found',
+            });
+        reviewsListElem.innerHTML = '<p class="not-found-message">Not found</p>';
+        }
 
 }
-init();
-
 
 function initSwiper() {
-    swiper = new Swiper('.swiper', {
+    reviewsSwiper = new Swiper('.reviews-swiper', {
         modules: [Navigation, Keyboard],
         keyboard: { enabled: true },
-        // Default parameters
+        //Swapper parameters
         slidesPerView: 1,
         spaceBetween: 16,
-        width:343,
         loop: false,
 
-        
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-reviews-button-next",
+            prevEl: ".swiper-reviews-button-prev",
         },
         breakpoints: {
-            // 768: {
-            //     slidesPerView: 2,
-            // },
-            // // when window width is >= 640px
+            375: {
+                // slidesPerView: 1,
+                width:343,
+            },
+            768: {
+                // slidesPerView: 2,
+                width:343,
+            },
             1440: {
                 // slidesPerView: 4,
                 width: 332,
@@ -55,11 +60,10 @@ function initSwiper() {
     })
 }
 
-window.addEventListener('keydown', callBack)
+window.addEventListener('keydown', tabNextSlide)
 
-function callBack(e) {
+function tabNextSlide(e) {
     if (e.key == 'Tab') {
-        console.log('hello');
-        swiper.slideNext();
+        reviewsSwiper.slideNext();
     }
 }
