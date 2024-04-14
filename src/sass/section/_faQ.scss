@@ -9,21 +9,19 @@ body {
   background-color: #1c1d20;
   padding: 0px 15px 64px 15px;
   display: inline-block;
-  @include tablet {
-    display: flex;
-  }
 }
 .title-faq {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-bottom: 10px;
   padding: 0px;
   flex: none;
   order: 0;
   flex-grow: 0;
   color: rgba(250, 250, 250, 0.4);
-  font-family: Inter Tight;
+  font-family: Inter Tight, serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -31,46 +29,43 @@ body {
   text-align: left;
 }
 .list-faq {
+  width: 100%;
   @include desktop {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    width: 50%;
+    float: left;
   }
 }
 .div-ac {
-  display: flex;
-  flex: 1;
-  align-items: stretch;
-  padding: 0px;
+  min-width: 100%;
+  padding: 10px;
   margin: 20px 0px;
 }
 .item-faq {
   background-color: #1c1d20;
   border-top: 1px solid white;
   align-items: stretch;
+  border: 1px white solid;
 }
 
 .question-faq {
-  display: block;
-  //   flex-direction: row;
-  //   flex-wrap: wrap;
+  display: inline-block;
   color: rgb(250, 250, 250);
-  font-family: Inter Tight;
+  font-family: Inter Tight, serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
-  flex: 1;
-  float: left;
-  width: 80%;
+  width: calc(100% - 45px);
+
 }
+
 .answer-faq {
-  margin: 16px 0px;
+  margin: 16px 0;
   color: rgba(250, 250, 250, 0.6);
-  font-family: Inter Tight;
+  font-family: Inter Tight, serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  background-color: green;
+
 }
 .ac-panel {
   display: block;
@@ -81,7 +76,7 @@ body {
   width: 34px;
   height: 34px;
   padding: 7px;
-  margin-left: 10px;
+  vertical-align: top;
   transition: all 0.35s 0.35s;
 }
 .toggle-down {
