@@ -17,7 +17,6 @@ body {
 .container {
   max-width: 375px;
   width: auto;
-  margin: 0 auto;
 
   @include tablet {
     max-width: 768px;
@@ -192,10 +191,8 @@ input {
 }
 
 .footer-btn {
-  padding: 0;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  border-radius: 50px;
+  padding: 40px 32px 41px;
   border: none;
   background-color: var(--button-text);
   color: var(--main-text);
@@ -208,8 +205,8 @@ input {
   }
 
   @include tablet {
-    width: 150px;
-    height: 150px;
+    border-radius: 100px;
+    padding: 65px 57px 66px;
   }
 }
 
