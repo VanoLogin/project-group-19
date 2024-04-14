@@ -42,9 +42,8 @@ body {
 }
 .item-faq {
   background-color: #1c1d20;
-  border-top: 1px solid white;
+  border-top: 1px solid #fafafa;
   align-items: stretch;
-  border: 1px white solid;
 }
 
 .question-faq {
@@ -71,6 +70,7 @@ body {
 }
 .btn {
   background: url(../../sprite.svg) no-repeat;
+  background-position: 0 0;
   width: 34px;
   height: 34px;
   padding: 7px;
