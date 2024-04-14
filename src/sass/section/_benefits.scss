@@ -1,9 +1,14 @@
 body {
     background-color:black;
 }
-.section-benefits{
+.section-benefits {
     height: 1271px;
     width: 344px;
+
+    @media (min-width: 768px) {
+        width: 704px;
+        height: 731px;
+    }
 }
 .benefits-title {
 font-family: "Inter Tight", sans-serif;
@@ -31,6 +36,11 @@ font-family: "Inter Tight", sans-serif;
     flex-direction: column;
     gap: 16px;
     align-items: center;
+    @media (min-width: 768px){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 }
 .benefits-list-item{
     background-color: #242527;
