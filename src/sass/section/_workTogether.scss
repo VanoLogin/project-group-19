@@ -10,23 +10,23 @@
   --font-family: 'Inter Tight', sans-serif;
 }
 
-// body {
-//   margin: 0 0;
-// }
+body {
+  margin: 0 0;
+}
 
-// .container {
-//   max-width: 375px;
-//   width: auto;
-//   margin: 0 auto;
+.container {
+  max-width: 375px;
+  width: auto;
+  margin: 0 auto;
 
-//   @include tablet {
-//     max-width: 768px;
-//   }
-//   @include desktop {
-//     max-width: 1440px;
-//     padding: 0 196px;
-//   }
-// }
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1440px;
+    padding: 0 196px;
+  }
+}
 
 input,
 button,
@@ -42,10 +42,38 @@ input {
 .footer {
   font-family: var(--font-family);
   background-color: var(--background);
+  background-image: url(../../img/footer/glass-effect-mob.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
   padding: 32px 0 42px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../img/footer/glass-effect-mob-2x.png);
+  }
 
   @include tablet {
     padding: 80px 0 187px;
+    background-image: url(../../img/footer/glass-effect-tab.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../img/footer/glass-effect-tab-2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../../img/footer/glass-effect.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../img/footer/glass-effect-2x.png);
+    }
   }
 }
 
@@ -72,6 +100,7 @@ input {
 
 .footer-logo {
   margin-right: 8px;
+  margin-bottom: 4px;
 
   @include tablet {
     margin-right: 20px;
@@ -94,12 +123,6 @@ input {
   }
 }
 
-// @media (min-width: 1440px) {
-//   .footer-title h2 {
-//     margin-bottom: 7px;
-//   }
-// }
-
 .footer-title span {
   color: var(--button-text);
 }
@@ -117,7 +140,7 @@ input {
   }
 }
 
-@media (min-width: 768px) {
+@include tablet {
   .footer-form-tabl {
     display: flex;
     flex-direction: row;
