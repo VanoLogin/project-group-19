@@ -106,8 +106,25 @@
   padding: 0px;
 }
 
-.swiper-button-prev.project-swiper-btn-prev::after, .swiper-button-next.project-swiper-btn-next::after {
+.project-swiper-btn-prev::after, 
+.project-swiper-btn-next::after {
   visibility: hidden;
+
+}
+
+.project-swiper-btn-next,
+.project-swiper-btn-prev{
+  position: static !important;
+}
+
+.project-container-swiper-button{
+  display: flex;
+  margin-top: 80px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+
 }
 
 .img-button {
@@ -117,9 +134,7 @@
 /* --------adaptive------- */
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  .swiper {
-    margin: 0 auto;
-  }
+
 
   .project-container {
     height: 1191px;
@@ -147,9 +162,7 @@
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .swiper {
-    margin: 0 auto;
-  }
+
 
   .project-container {
     height: 812px;
@@ -186,5 +199,9 @@
     border-radius: 0px 0px 24px 24px;
     max-height: 625px;
     height: 100%;
+  }
+
+  .project-container-swiper-button{
+    gap: 12px;
   }
 }

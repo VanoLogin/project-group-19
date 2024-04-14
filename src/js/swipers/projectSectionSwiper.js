@@ -1,15 +1,15 @@
-const swiper = new Swiper('.swiper', {
+import Swiper from "swiper";
+import { Navigation, Keyboard} from 'swiper/modules';
+import 'swiper/css';
 
+const swiper = new Swiper('.swiper', {
+    modules: [Navigation, Keyboard],
     direction: 'horizontal',
     loop: false,  
-    speed: 2000,
+    speed: 1000,
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.project-swiper-btn-next',
+      prevEl: '.project-swiper-btn-prev',
     },
-
-    autoplay: {
-        delay:5000,
-    }
   });
