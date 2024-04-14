@@ -1,17 +1,11 @@
 .section-faq {
   background-color: #1c1d20;
   padding: 0px 15px 64px 15px;
-}
-.title-faq {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 10px;
-  padding: 0px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+}
+
+.title-faq {
   color: rgba(250, 250, 250, 0.4);
   font-family: Inter Tight, serif;
   font-size: 16px;
@@ -20,66 +14,63 @@
   letter-spacing: -2%;
   text-align: left;
 }
-ul.list-faq {
-  width: 100%;
-  @include desktop {
-    width: 50%;
-    float: left;
-  }
+
+.list-faq {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
 }
 li.item-faq {
   background-color: #1c1d20;
+  border: 0;
   border-top: 1px solid rgba(250, 250, 250, 0.2);
+  padding: 30px 20px;
+  margin-top: 0;
 }
-button.ac-trigger.trigger-faq::after {
-  content: '' !important;
-  display: inline-block !important;
-  background-image: url('/Users/newuser/Documents/GitHub/project-group-19/src/sass/section/sprite.svg#icon-user') !important;
-  background-position: 0px 0px !important;
-  width: 16px !important;
-  height: 16px !important;
+.list-faq {
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
 }
-ul.list-faq {
-  display: flex;
-  flex-wrap: wrap;
+li.item-faq:nth-child(odd) {
+  @include desktop {
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+  }
 }
-// .div-ac {
-//   min-width: 100%;
-//   padding: 10px;
-//   margin: 20px 0px;
-// }
+li.item-faq:nth-child(5) {
+  @include desktop {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  }
+}
+li.item-faq:nth-child(6) {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.trigger-faq::after {
+  content: '';
+  display: inline-block;
+  background-image: url('/Users/newuser/Documents/GitHub/project-group-19/src/sass/section/sprite.svg#icon-user');
+  background-position: 0px 0px;
+  width: 16px;
+  height: 16px;
+}
+
 .ac-trigger.trigger-faq {
-  color: rgb(250, 250, 250);
+  color: rgb(250, 250, 250) !important;
   font-family: Inter Tight;
 }
-p.text-faq {
-  margin: 16px 0;
-  color: rgba(250, 250, 250, 0.6);
+
+.text-faq {
+  color: rgba(250, 250, 250, 0.6) !important;
   font-family: Inter Tight, serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
-div.ac-panel {
+
+.ac-panel {
   display: block;
   width: 100%;
 }
-// .btn {
-//   display: flex;
-//   align-items: center;
-//   background: #1c1d20;
-//   width: 34px;
-//   height: 34px;
-//   padding: 7px;
-//   vertical-align: top;
-//   transition: all 0.35s 0.35s;
-//   border: 1px solid rgba(250, 250, 250, 0.2);
-//   border-radius: 100px;
-// }
-// .toggle-down {
-//   transform: rotate(0deg);
-// }
-
-// .toggle-up {
-//   transform: rotate(180deg);
-// }
