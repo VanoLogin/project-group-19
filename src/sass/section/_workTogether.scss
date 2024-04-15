@@ -148,10 +148,15 @@ body {
   }
 
   &:hover,
+  &:active,
   &:focus {
     border: none;
-
     border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+  }
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #1c1d20 !important;
+    -webkit-text-fill-color: var(--main-text) !important;
   }
 
   @include tablet {
