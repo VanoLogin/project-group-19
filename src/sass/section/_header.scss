@@ -82,6 +82,13 @@ $text-color: #fafafa;
     background: rgb(237, 59, 68);
     height: 55px;
 
+    &:hover {
+      background: #e0373f;
+    }
+    &:focus {
+      background: #e0373f;
+    }
+
     @include tablet {
       display: flex;
     }
