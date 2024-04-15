@@ -6,7 +6,7 @@ $text-color: #fafafa;
   z-index: 11111;
   .container {
     @media (max-width: 375px) {
-      padding: 0 8px;
+      padding: 0 16px;
     }
   }
 }

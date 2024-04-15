@@ -6,10 +6,12 @@ $text-color: #fafafa;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
+  height: 100vh;
+  padding-top: 40.6vh;
 
   @include tablet {
     background-image: url(../img/hero-header/tablet-bg.png);
+    padding-top: 43.4vh;
   }
   @include desktop {
     background-image: url(../img/hero-header/desktop-bg.png);
@@ -27,6 +29,10 @@ $text-color: #fafafa;
   }
 
   .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     @media (max-width: 375px) {
       padding: 0 8px;
     }
@@ -34,64 +40,67 @@ $text-color: #fafafa;
 }
 
 .hero-title {
-  margin-top: 281px;
-  margin-bottom: 212px;
-  z-index: 2;
+  position: relative;
+  z-index: 3;
   @include tablet {
-    margin-top: 300px;
-    margin-bottom: 187px;
+    width: 632px;
   }
-
   @include desktop {
-    padding: 0 146px;
-    margin-bottom: 153px;
+    min-width: 1084px;
   }
 }
 
 .hero-title-socials-wrapper {
   display: flex;
   flex-direction: column;
+  height: 100%;
 
-  .socials-list {
-    z-index: 2;
-    display: flex;
-    gap: 4px;
-    row-gap: 16px;
-    margin-bottom: 32px;
-    flex-wrap: wrap;
+  @include desktop {
+    align-items: center;
+  }
+}
 
-    @include tablet {
-      align-self: flex-end;
-    }
+.socials-list {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  gap: 4px;
+  row-gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  align-self: flex-end;
 
-    .socials-list-item {
-      font-family: 'Inter Tight';
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 17px;
-      text-align: left;
-      letter-spacing: -0.02em;
-      color: $text-color;
-    }
+  @include tablet {
+    align-self: flex-end;
+  }
 
-    .socials-list-item:first-child > a {
-      padding: 10px 12px;
-    }
+  .socials-list-item {
+    font-family: 'Inter Tight';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    letter-spacing: -0.02em;
+    color: $text-color;
+  }
 
-    .socials-list-item:nth-child(4) > a {
-      padding: 10px 9px;
-    }
+  .socials-list-item:first-child > a {
+    padding: 10px 12px;
+  }
 
-    .socials-list-item:last-child > a {
-      padding: 10px 12px;
-    }
+  .socials-list-item:nth-child(4) > a {
+    padding: 10px 9px;
+  }
 
-    .socials-list-link {
-      box-sizing: border-box;
-      border: 1px solid rgba(250, 250, 250, 0.2);
-      border-radius: 60px;
-      padding: 10px;
-      display: inline-block;
-    }
+  .socials-list-item:last-child > a {
+    padding: 10px 12px;
+  }
+
+  .socials-list-link {
+    box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px;
+    display: inline-block;
   }
 }
