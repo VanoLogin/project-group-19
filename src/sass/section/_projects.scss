@@ -71,11 +71,16 @@
   border-radius: 60px;
   border: solid 0px;
   text-decoration: none;
-  color: #FAFAFA;
 
   &:hover {
     background: #E0373F;
   }
+}
+
+.item1-button-link{
+  padding:18px 35px;
+  text-decoration: none;
+  color: #FAFAFA;
 }
 
 /* ----------item2---------- */
