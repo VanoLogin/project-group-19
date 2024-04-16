@@ -1,9 +1,4 @@
-body{
-    margin: 0;
-}
-
-.reviews-container{
-    box-sizing: border-box;
+.reviews > .container{
             @media screen and (min-width: 375px) {
                 max-width: 375px;
             }
