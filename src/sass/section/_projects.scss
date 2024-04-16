@@ -106,12 +106,21 @@
 
 
 
-.project-swiper-button-next::after,
-.project-swiper-button-prev::after{
- 
+.swiper-button-next.project-swiper-button-next::after,
+.swiper-button-prev.project-swiper-button-prev::after{
+  content: "+";
+  color: red;
+  width: 20px;
+  height: 20px;
+  
 }
 
 .project-swiper-button-container{
+
+}
+
+.swiper-button-next::after,
+.project-swiper-button-next{
 
 }
 
