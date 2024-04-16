@@ -1,23 +1,19 @@
 const form = document.querySelector('.footer-form');
-const input = document.querySelectorAll('input');
 
 form.addEventListener('submit', onFormSabmit);
 
 function onFormSabmit(e) {
   e.preventDefault();
 
-  const email = form.elements.email.value.trim();
-  const message = form.elements.comments.value.trim();
+  const formData = new FormData(form);
+
+  const emailInput = formData.get('email');
+  const commentInput = formData.get('comments');
 
   const data = {
-    email,
-    message,
+    email: emailInput,
+    message: commentInput,
   };
 
-  const maxLength = input.offsetWidth / 10;
-
-  if (message.length > maxLength) {
-    input.value = message.substring(0, maxLength) + '...';
-  }
+  console.log(data);
 }
-console.log(data);
