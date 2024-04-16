@@ -24,4 +24,3 @@ document.addEventListener("DOMContentLoaded", function() {
     observer.observe(coversSection);
   });
 
-  

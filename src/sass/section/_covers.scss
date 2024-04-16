@@ -1,3 +1,6 @@
+body{
+  margin: 0;
+}
 li{
     list-style: none;
   }
@@ -15,6 +18,7 @@ li{
     justify-content: center;
     right: -20px;
     height: 100vh;
+   
     // max-width: 100%;
     // height: 508px;
     // @include tablet {
@@ -26,24 +30,26 @@ li{
     display: flex;
     transform: rotate(16deg) translateY(-200px);
     margin-bottom: 10px;
-  
+  align-items: flex-start;
   }
   
   .photos-list {
   display: flex;
   margin-bottom: 10px;
   margin-right: 15px;
-  
+
   }
   
   .animation-photo {
     margin-right: 30px; 
     width: 282px; 
     height: 162px;
-    animation-name: animation;
-    animation-duration: 15s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation: scrolling 15s linear infinite;
+    white-space: nowrap;
+    // animation-name: animation;
+    // animation-duration: 15s;
+    // animation-timing-function: ease-in-out;
+    // animation-iteration-count: infinite;
     @include tablet{
         height: 314px;
         width: 544px;
@@ -62,14 +68,14 @@ li{
         }
     
   }
-  @keyframes animation {
+  @keyframes scrolling {
      from {
-      transform: translateX(-50%); 
+      transform: translateX(-20%); 
     }
     to{
-      transform: translateX(-380%); 
-    }
+      transform: translateX(-180%); 
   }
+}
   .visually-hidden {
     position: absolute;
     width: 1px;
