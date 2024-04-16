@@ -31,9 +31,10 @@ async function initCardEditor() {
 
 function initSwiper() {
     reviewsSwiper = new Swiper('.reviews-swiper', {
+        //Swapper parameters
         modules: [Navigation, Keyboard],
         keyboard: { enabled: true },
-        //Swapper parameters
+        autoHeight: true,
         slidesPerView: 1,
         spaceBetween: 16,
         loop: false,
@@ -44,16 +45,16 @@ function initSwiper() {
         },
         breakpoints: {
             375: {
-                // slidesPerView: 1,
-                width: 343,
+                slidesPerView: 1,
+                // width: 343,
             },
             768: {
-                // slidesPerView: 2,
-                width: 343,
+                slidesPerView: 2,
+                // width: 343,
             },
             1440: {
-                // slidesPerView: 4,
-                width: 332,
+                slidesPerView: 4,
+                // width: 332,
             }
         }
     });
