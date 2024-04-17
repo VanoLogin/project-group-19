@@ -5,6 +5,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 const form = document.querySelector('.footer-form');
 const modal = document.querySelector('.footer-backdrop');
 const btnCloseModal = document.querySelector('.modal-close-btn');
+const cutInput = document.querySelector('#comments');
 
 form.addEventListener('submit', onFormSabmit);
 
@@ -15,13 +16,6 @@ async function onFormSabmit(e) {
 
   const emailInput = formData.get('email');
   const commentInput = formData.get('comments');
-
-  // const maxLength = 100;
-  // if (commentInput.length > maxLength) {
-  //   return commentInput.substring(0, maxLength - 3) + '...';
-  // } else {
-  //   return commentInput;
-  // }
 
   const data = {
     email: emailInput,
@@ -49,4 +43,10 @@ async function onFormSabmit(e) {
 
 btnCloseModal.addEventListener('click', () => {
   modal.classList.remove('is-open');
+});
+
+modal.addEventListener('click', e => {
+  if (e.target.classList.contains('footer-backdrop')) {
+    modal.classList.remove('is-open');
+  }
 });
