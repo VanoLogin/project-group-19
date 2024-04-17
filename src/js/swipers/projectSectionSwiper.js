@@ -4,7 +4,8 @@ import 'swiper/css/bundle';
 const swiper = new Swiper('.project-swiper', {
   loop: false,
   speed: 1000,
-
+  grabCursor: true,
+  
   keyboard: {
     enabled: true,
 },
@@ -13,5 +14,7 @@ const swiper = new Swiper('.project-swiper', {
     nextEl: '.project-swiper-button-next',
     prevEl: '.project-swiper-button-prev',
   },
+
+
 
 });

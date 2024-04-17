@@ -1,6 +1,5 @@
 .project{
   background: #1C1D20;
-
 }
 
 .project-title{
@@ -49,7 +48,7 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 6px;
 }
 
 .skils-name {
@@ -107,6 +106,7 @@
 }
 
 /* ------------project-swiper----------- */
+
 .swiper-button-next.project-swiper-button-next::after,
 .swiper-button-prev.project-swiper-button-prev::after{
   content: "";
@@ -119,8 +119,6 @@
   height: 27px;
   width: 27px;
 }
-
-
 
 .left-button{
   transform: scale(-1, -1);
@@ -136,7 +134,6 @@
   position: relative;
 }
 
-
 .project-swiper-button-next,
 .project-swiper-button-prev{
 
@@ -146,7 +143,6 @@
     padding: 15px;
     position: static !important;
 }
-
 
   // position: static !important;
   // transform: scale(-1, -1);
