@@ -1,5 +1,6 @@
 .project{
   background: #1C1D20;
+ 
 }
 
 .project-title{
@@ -106,11 +107,9 @@
 }
 
 /* ------------project-swiper----------- */
-
 .swiper-button-next.project-swiper-button-next::after,
 .swiper-button-prev.project-swiper-button-prev::after{
   content: "";
-
 }
 
 .swiper-button-prev.project-swiper-button-prev,
