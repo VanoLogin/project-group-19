@@ -128,7 +128,7 @@ body {
 .footer input {
   padding: 0px 0px 20px;
   background-color: transparent;
-  width: 100%;
+  width: 343px;
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   outline: none;
@@ -160,11 +160,11 @@ body {
   }
 
   @include tablet {
-    max-width: 245px;
+    width: 245px;
   }
 
   @include desktop {
-    max-width: 390px;
+    width: 390px;
   }
 }
 

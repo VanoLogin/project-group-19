@@ -1,6 +1,10 @@
 import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const form = document.querySelector('.footer-form');
+const modal = document.querySelector('.footer-backdrop');
+const btnCloseModal = document.querySelector('.modal-close-btn');
 
 form.addEventListener('submit', onFormSabmit);
 
@@ -30,8 +34,19 @@ async function onFormSabmit(e) {
 
   try {
     const response = await axios.post(url, data);
+    modal.classList.add('is-open');
+    form.reset();
     return response.data;
   } catch (error) {
+    iziToast.error({
+      color: 'red',
+      message: '❌ Sorry, there is an error. Please try again later!',
+      position: 'topRight',
+    });
     console.log(error);
   }
 }
+
+btnCloseModal.addEventListener('click', () => {
+  modal.classList.remove('is-open');
+});
