@@ -265,6 +265,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+    padding: 64px;
+    width: 492px;
+  }
 }
 
 .modal-close-btn {
@@ -273,8 +278,18 @@ body {
   top: 20px;
   right: 20px;
   background-color: transparent;
-  color: var(--main-text);
+  fill: var(--main-text);
   border: none;
+}
+
+.modal-close-btn-icon {
+  width: 22px;
+  height: 22px;
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .modal-title {
