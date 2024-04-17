@@ -3,24 +3,34 @@ body {
 }
 .section-benefits {
     width: 344px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 
-    @media (min-width: 768px) {
+    @include tablet {
         width: 704px;
         height: 731px;
+        
     }
-    @media (min-width: 1440px) {
-        width: 1376px;
+        @include desktop {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 675px;
+        
     }
 }
 .benefits-title {
 font-family: "Inter Tight", sans-serif;
     font-weight: 600;
     font-size: 16px;
+    height: 24px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: rgba(250, 250, 250, 0.4);
-    margin-bottom: 32px;
+
 }
 .benefits-list-item-title {
     font-family: "Inter Tight", sans-serif;
@@ -38,16 +48,16 @@ font-family: "Inter Tight", sans-serif;
     flex-direction: column;
     gap: 16px;
     align-items: center;
-    @media (min-width: 768px){
+@include tablet{
         flex-direction: row;
         flex-wrap: wrap;
     }
-    @media (min-width: 1440px){
+        @include desktop{
         width: 680px;
         height: 556px;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: auto;
+        
     }
 
 }
@@ -57,7 +67,7 @@ font-family: "Inter Tight", sans-serif;
         width: 344px;
         height: 270px;
         padding: 0;
-    @media (min-width: 1440px) {
+    @include desktop {
             width: 332px;
         }
         
@@ -85,23 +95,30 @@ border-radius: 10px;
 }
 .benefits-order-btn {
     border: 1px solid rgba(250, 250, 250, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 18px 36px;
     border-radius: 60px;
-    width: 187px;
-    height: 55px;
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
+    max-width: 115px;
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
-    margin-top: 32px;
-    @media (min-width: 768px) {
-            margin-top: 64px;
-        }
-    @media (min-width: 1440px) {
-            margin-left: 696px;
-            margin-top: 64px;
-        }
+    
+}
+.benefits-content {
+    width: 344px;
+    display: flex;
+    gap: 32px;
+    
+    flex-direction: column;
+    @include tablet {
+        width: 704px;
+        
+        gap: 64px;
+    }
+        @include desktop {
+       height: 675px;
+       
+        width: 680px;
+    }
 }
