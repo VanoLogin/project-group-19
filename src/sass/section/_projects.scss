@@ -1,7 +1,12 @@
 
-// .project-container {
-//   margin: 0px 2% 0px 2%;
-// }
+
+.project{
+  background: #000;
+}
+
+.project-title{
+  margin-bottom: 32px;
+}
 
 .project-package {
   display: flex;
@@ -102,55 +107,52 @@
   max-width: 100%;
 }
 
-/* ------------project-switch----------- */
-
-
-
+/* ------------project-swiper----------- */
 .swiper-button-next.project-swiper-button-next::after,
 .swiper-button-prev.project-swiper-button-prev::after{
-  content: "+";
-  color: red;
-  width: 20px;
-  height: 20px;
-  
+  content: "";
+
+}
+
+.swiper-button-prev.project-swiper-button-prev,
+.swiper-button-next.project-swiper-button-next
+{
+  height: 27px;
+  width: 27px;
+}
+
+
+
+.left-button{
+  transform: scale(-1, -1);
 }
 
 .project-swiper-button-container{
-
+  
+  margin-top: 92px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
 }
 
-.swiper-button-next::after,
-.project-swiper-button-next{
 
+.project-swiper-button-next,
+.project-swiper-button-prev{
+
+    box-sizing:content-box;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    padding: 15px;
+    position: static !important;
 }
 
-// .swiper-wrapper.progect-swiper-wrapper {
-//   padding: 0px;
-// }
 
-// .project-swiper-btn-prev::after, 
-// .project-swiper-btn-next::after {
-//    visibility: hidden;
-// }
-
-// .project-swiper-btn-next,
-// .project-swiper-btn-prev{
-//   position: static !important;
-// }
-
-// .project-container-swiper-button{
-//   display: flex;
-//   margin-top: 80px;
-//     flex-direction: row;
-//     justify-content: center;
-//     gap: 20px;
-//     position: relative;
-
-// }
-
-// .img-button {
-//   transform: scale(-1, -1);
-// }
+  // position: static !important;
+  // transform: scale(-1, -1);
+  // visibility: hidden;
+  // content: "";
 
 /* --------adaptive------- */
 
