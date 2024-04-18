@@ -17,7 +17,7 @@ body {
 .footer {
   font-family: var(--footer-font-family);
   background-color: var(--footer-background);
-  background-image: url(..//img/footer/glass-effect-mob.png);
+  background-image: url(//img/footer/glass-effect-mob.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -27,27 +27,27 @@ body {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(..//img/footer/glass-effect-mob-2x.png);
+    background-image: url(//img/footer/glass-effect-mob-2x.png);
   }
 
   @include tablet {
     padding: 80px 0 169px;
-    background-image: url(..//img/footer/glass-effect-tab.png);
+    background-image: url(//img/footer/glass-effect-tab.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(..//img/footer/glass-effect-tab-2x.png);
+      background-image: url(//img/footer/glass-effect-tab-2x.png);
     }
   }
 
   @include desktop {
-    background-image: url(..//img/footer/glass-effect.png);
+    background-image: url(//img/footer/glass-effect.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(..//img/footer/glass-effect-2x.png);
+      background-image: url(//img/footer/glass-effect-2x.png);
     }
   }
 }
