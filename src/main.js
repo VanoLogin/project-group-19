@@ -1,5 +1,5 @@
 //-> Projects
-// import './js/swipers/projectSectionSwiper.js'
+import './js/swipers/projectSectionSwiper.js'
 
 //-> Review
 import './js/swipers/reviewsSectionSwiper';
