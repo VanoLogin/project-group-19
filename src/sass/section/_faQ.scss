@@ -48,15 +48,18 @@ li.item-faq:nth-child(6) {
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.trigger-faq::after {
-  content: '';
+.ac .ac-trigger.trigger-faq::after {
+  content: url('../../img/SVG/arrow-down-circle.svg');
   display: inline-block;
-  background-image: url('/Users/newuser/Documents/GitHub/project-group-19/src/sass/section/sprite.svg#icon-user');
   background-position: 0px 0px;
   width: 16px;
   height: 16px;
 }
-
+.ac.is-active > .ac-header .ac-trigger.trigger-faq::after {
+  content: url('../../img/SVG/arrow-up-circle.svg');
+  width: 16px;
+  height: 16px;
+}
 .ac-trigger.trigger-faq {
   color: rgb(250, 250, 250) !important;
   font-family: Inter Tight;
