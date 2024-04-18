@@ -1,0 +1,124 @@
+body {
+    background-color:#1C1D20;
+}
+.section-benefits {
+    width: 344px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include tablet {
+        width: 704px;
+        height: 731px;
+        
+    }
+        @include desktop {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 675px;
+        
+    }
+}
+.benefits-title {
+font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    height: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+
+}
+.benefits-list-item-title {
+    font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+        margin-top: 64px;
+        width: 296px;
+        margin-left: 24px;
+}
+.benefits-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+@include tablet{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        @include desktop{
+        width: 680px;
+        height: 556px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+}
+.benefits-list-item{
+    background-color: #242527;
+    border-radius: 20px;
+        width: 344px;
+        height: 270px;
+        padding: 0;
+    @include desktop {
+            width: 332px;
+        }
+        
+}
+.benefits-svg-container{
+border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ed3b44;
+    margin-left: 24px;
+    margin-top: 24px;
+}
+.benefits-list-item-text{
+    font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        color: rgba(250, 250, 250, 0.6);
+        width: 296px;
+        margin-left: 24px;
+}
+.benefits-order-btn {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    padding: 18px 36px;
+    border-radius: 60px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    max-width: 115px;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    
+}
+.benefits-content {
+    width: 344px;
+    display: flex;
+    gap: 32px;
+    
+    flex-direction: column;
+    @include tablet {
+        width: 704px;
+        
+        gap: 64px;
+    }
+        @include desktop {
+       height: 675px;
+       
+        width: 680px;
+    }
+}

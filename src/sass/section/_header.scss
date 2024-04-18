@@ -1,0 +1,102 @@
+$text-color: #fafafa;
+
+.page-header {
+  position: absolute;
+  width: 100%;
+  z-index: 11111;
+  .container {
+    @media (max-width: 375px) {
+      padding: 0 16px;
+    }
+  }
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+
+  .text-logo-wrapper {
+    display: flex;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-menu-btn,
+  .icon-burger-btn {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    text-align: start;
+    height: 0;
+  }
+
+  .logo-text {
+    font-family: 'Inter Tight';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: $text-color;
+    margin-left: 8px;
+  }
+
+  .header-menu-btn {
+    display: none;
+
+    font-family: 'Inter Tight';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 17px;
+    color: $text-color;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  .header-order-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Inter Tight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -2%;
+    text-align: left;
+    color: $text-color;
+    padding: 0 24px;
+    border-radius: 60px;
+    background: rgb(237, 59, 68);
+    height: 55px;
+
+    &:hover {
+      background: #e0373f;
+    }
+    &:focus {
+      background: #e0373f;
+    }
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  .icon-burger-btn {
+    @include tablet {
+      display: none;
+    }
+  }
+}
