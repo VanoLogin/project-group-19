@@ -36,7 +36,7 @@ function initSwiper() {
         keyboard: { enabled: true },
         autoHeight: true,
         slidesPerView: 1,
-        spaceBetween: 16,
+        spaceBetween: 20,
         loop: false,
 
         navigation: {
