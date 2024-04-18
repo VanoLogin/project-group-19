@@ -1,23 +1,52 @@
+import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 const form = document.querySelector('.footer-form');
-const input = document.querySelectorAll('input');
+const modal = document.querySelector('.footer-backdrop');
+const btnCloseModal = document.querySelector('.modal-close-btn');
+const cutInput = document.querySelector('#comments');
 
 form.addEventListener('submit', onFormSabmit);
 
-function onFormSabmit(e) {
+async function onFormSabmit(e) {
   e.preventDefault();
 
-  const email = form.elements.email.value.trim();
-  const message = form.elements.comments.value.trim();
+  const formData = new FormData(form);
+
+  const emailInput = formData.get('email');
+  const commentInput = formData.get('comments');
 
   const data = {
-    email,
-    message,
+    email: emailInput,
+    comment: commentInput,
   };
 
-  const maxLength = input.offsetWidth / 10;
+  console.log(data);
 
-  if (message.length > maxLength) {
-    input.value = message.substring(0, maxLength) + '...';
+  const url = 'https://portfolio-js.b.goit.study/api/requests';
+
+  try {
+    const response = await axios.post(url, data);
+    modal.classList.add('is-open');
+    form.reset();
+    return response.data;
+  } catch (error) {
+    iziToast.error({
+      color: 'red',
+      message: '❌ Sorry, there is an error. Please try again later!',
+      position: 'topRight',
+    });
+    console.log(error);
   }
 }
-console.log(data);
+
+btnCloseModal.addEventListener('click', () => {
+  modal.classList.remove('is-open');
+});
+
+modal.addEventListener('click', e => {
+  if (e.target.classList.contains('footer-backdrop')) {
+    modal.classList.remove('is-open');
+  }
+});

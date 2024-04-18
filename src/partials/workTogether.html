@@ -38,17 +38,18 @@
             id="email"
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
             placeholder="clients@gmail.com"
-            required=""
+            required
             autofocus
           />
         </label>
         <label for="comments">
           <input
+            class="test"
             type="text"
             name="comments"
             id="comments"
             placeholder="comments"
-            required=""
+            required
           />
         </label>
         <button type="submit" class="footer-btn">Send</button>
@@ -67,4 +68,23 @@
     </div>
   </div>
 </section>
+
+<!----------                 modal       -->
+
+<div class="footer-backdrop">
+  <div class="footer-modal">
+    <button class="modal-close-btn" type="button">
+      <svg class="modal-close-btn-icon">
+        <use href="../public/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <div class="modal-content">
+      <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+      <p class="modal-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</div>
 <script src="../js/footerForm/formSubmit.js" type="module"></script>
