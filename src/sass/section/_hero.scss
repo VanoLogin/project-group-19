@@ -8,6 +8,7 @@ $text-color: #fafafa;
   background-size: cover;
   height: 100vh;
   padding-top: 40.6vh;
+  margin-top: 0;
 
   @include tablet {
     background-image: url(../img/hero-header/tablet-bg.png);

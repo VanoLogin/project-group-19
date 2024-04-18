@@ -1,6 +1,5 @@
 .section-accordion-about-me {
   background-color: #1c1d20;
-  padding: 0px 15px 64px 15px;
   display: flex;
   flex-direction: column;
 }
@@ -56,24 +55,32 @@
 li.item-about-me {
   background-color: #1c1d20;
   border: 0;
-  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   padding: 30px 20px;
   margin-top: 0;
-}
-li.item-about-me:nth-child(odd) {
-  @include desktop {
-    border-right: 1px solid rgba(250, 250, 250, 0.2);
-  }
-}
-li.item-about-me:nth-child(5) {
-  @include desktop {
+  &:not(:first-child) {
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
 }
-li.item-about-me:nth-child(6) {
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+// // li.item-about-me:nth-child(odd) {
+// //   @include desktop {
+// //     border-right: 1px solid rgba(250, 250, 250, 0.2);
+// //   }
+// // }
+// li.item-about-me:nth-child(5) {
+//   @include desktop {
+//     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+//   }
+// }
+// li.item-about-me:last-child {
+//   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+// }
+// li.item-about-me:first-child{
+//   border-bottom: none
+// }
+.ac .ac-trigger.trigger-about-me {
+  padding: 0;
 }
-
 .ac .ac-trigger.trigger-about-me::after {
   content: url('../img/arrow-down-circle.svg');
   display: inline-block;

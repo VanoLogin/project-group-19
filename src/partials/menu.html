@@ -1,18 +1,19 @@
-<link rel="stylesheet" href="../sass/section/_menu.scss" />
-<div class="modal is-open">
+<div class="modal">
   <div class="modal-container">
     <button class="modal-close-btn" type="button">
       <svg class="modal-close-svg" width="28px" height="28px">
-        <use xlink:href="../public/sprite.svg#icon-x"></use>
+        <use href="../public/sprite.svg#icon-close-menu"></use>
       </svg>
     </button>
     <ul class="modal-menu-list">
-      <li><a href="#about-me">About me</a></li>
-      <li><a href="#benefits">Benefits</a></li>
-      <li><a href="#reviews">Projects</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li class="menu-list-modal"><a href="#about-me">About me</a></li>
+      <li class="menu-list-modal"><a href="#benefits">Benefits</a></li>
+      <li class="menu-list-modal"><a href="#reviews">Projects</a></li>
+      <li class="menu-list-modal"><a href="#faq">FAQ</a></li>
     </ul>
-    <a href="#footer" class="modal-order-btn"> Order the project </a>
+    <button class="modal-order-btn">
+      <a href="#footer"> Order the project </a>
+    </button>
   </div>
 </div>
 <script src="../js/modalTemplates/modalMenu.js" type="module"></script>
