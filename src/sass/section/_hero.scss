@@ -2,7 +2,7 @@ $text-color: #fafafa;
 
 .hero {
   position: relative; /* Ensure z-index works */
-  background-image: url(./img/hero-header/mobile-bg.png);
+  background-image: url(/img/hero-header/mobile-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11,11 +11,11 @@ $text-color: #fafafa;
   margin-top: 0;
 
   @include tablet {
-    background-image: url(./img/hero-header/tablet-bg.png);
+    background-image: url(/img/hero-header/tablet-bg.png);
     padding-top: 43.4vh;
   }
   @include desktop {
-    background-image: url(./img/hero-header/desktop-bg.png);
+    background-image: url(/img/hero-header/desktop-bg.png);
   }
 
   &::before {

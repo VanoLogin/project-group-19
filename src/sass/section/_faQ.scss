@@ -48,7 +48,7 @@ li.item-faq:nth-child(6) {
 }
 
 .ac .ac-trigger.trigger-faq::after {
-  content: url('/./img/SVG/arrow-down-circle.svg');
+  content: url('/img/SVG/arrow-down-circle.svg');
   display: inline-block;
   background-position: 0px 0px;
   width: 16px;
@@ -56,7 +56,7 @@ li.item-faq:nth-child(6) {
 }
 
 .ac.is-active > .ac-header .ac-trigger.trigger-faq::after {
-  content: url('/./img/SVG/arrow-up-circle.svg');
+  content: url('/img/SVG/arrow-up-circle.svg');
   width: 16px;
   height: 16px;
 }
