@@ -1,11 +1,12 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const form = document.querySelector('.footer-form');
 const modal = document.querySelector('.footer-backdrop');
 const btnCloseModal = document.querySelector('.modal-close-btn');
-const cutInput = document.querySelector('#comments');
 
 form.addEventListener('submit', onFormSabmit);
 
@@ -28,12 +29,14 @@ async function onFormSabmit(e) {
 
   try {
     const response = await axios.post(url, data);
+
     modal.classList.add('is-open');
+
     form.reset();
     return response.data;
   } catch (error) {
     iziToast.error({
-      color: 'red',
+      color: '#ED3B44',
       message: '❌ Sorry, there is an error. Please try again later!',
       position: 'topRight',
     });
