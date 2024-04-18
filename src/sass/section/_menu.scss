@@ -1,0 +1,167 @@
+.modal {
+  // display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  transition: right 0.3s ease;
+  z-index: 1000000;
+  background-image: url(../../img/modal-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal.is-open {
+  right: 0;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-menu-list {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal-menu-list a {
+  text-decoration: underline;
+  text-decoration-color: white;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+  display: inline-block;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+.menu-list-modal {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+.modal-close-btn {
+  width: 28px;
+  height: 28px;
+  color: white;
+  position: absolute;
+  top: 32px;
+  right: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.modal-order-btn {
+  padding: 14px 32px;
+  background-color: rgba(237, 59, 68, 1);
+  color: white;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  //   position: relative;
+}
+
+////
+
+// .modal {
+//     position: fixed;
+//     top: 0;
+//     right: -100%;
+//     bottom: 0;
+//     width: 100%;
+//     background-color: black;
+//     transition: right 0.3s ease;
+//     z-index: 999;
+//     background-image: url(../../img/modal-background.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+
+//     &.is-open {
+//         right: 0;
+//     }
+
+//     .modal-container {
+//         position: absolute;
+//         top: 0;
+//         bottom: 0;
+//         right: 0;
+//         left: 0;
+//         display: flex;
+//         flex-direction: column;
+
+//         align-items: center;
+
+//         .modal-menu-list {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             gap: 12px;
+//             list-style-type: none;
+//             color: white;
+//             width: 67px;
+//             margin-top: auto;
+
+//             a {
+//                 text-decoration: underline;
+//                 text-decoration-color: white;
+//                 font-family: "Inter Tight", sans-serif;
+//                 font-weight: 500;
+//                 font-size: 16px;
+//                 letter-spacing: -0.02em;
+//                 text-decoration: underline;
+//                 text-decoration-skip-ink: none;
+//                 color: #fafafa;
+//             }
+//         }
+
+//         .modal-close-btn {
+//             width: 28px;
+//             height: 28px;
+//             color: white;
+//             position: absolute;
+//             top: 18px;
+//             right: 18px;
+//             background: none;
+//             border: none;
+//             padding: 0;
+//         }
+
+//         .modal-order-btn {
+//             width: 164px;
+//             height: 45px;
+//             background-color: rgba(237, 59, 68, 1);
+//             color: white;
+//             border: none;
+//             border-radius: 60px;
+//             cursor: pointer;
+//             margin-top: auto;
+//             margin-bottom: 64px;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//         }
+//     }
+// }
+// @include tablet  {
+//     .modal {
+//         display: none;
+//     }
+// }
+// @include desktop {
+//     .modal {
+//         display: none;
+//     }
+// }

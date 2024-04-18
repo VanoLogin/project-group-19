@@ -1,0 +1,101 @@
+.section-benefits {
+  background-color: #1c1d20;
+}
+.benefits-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  height: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+.benefits-list-item-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-top: 64px;
+}
+.benefits-list {
+  display: block;
+  @include tablet {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.benefits-list-item {
+  background-color: #242527;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 332px;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+    @include tablet {
+        margin-bottom: 0;
+    }
+  }
+
+}
+.benefits-svg-container {
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ed3b44;
+}
+.benefits-list-item-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  margin-top: 8px;
+}
+.benefits-order-btn {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  padding: 18px 36px;
+  border-radius: 60px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  background-color: inherit;
+  margin-top: 82px;
+}
+
+.benefits-content {
+  @include desktop {
+    width: 50%;
+  }
+}
+.benefits-header-container {
+  @include desktop {
+    width: 50%;
+    display: flex;
+  }
+}
+.wrap-container-main {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
