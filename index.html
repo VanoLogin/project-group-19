@@ -13,20 +13,865 @@
     />
     
     <script type="module" crossorigin src="/project-group-19/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-group-19/assets/index-ad9ed919.css">
+    <link rel="modulepreload" crossorigin href="/project-group-19/assets/vendor-f8d0183e.js">
+    <link rel="stylesheet" href="/project-group-19/assets/vendor-d2eacb2b.css">
+    <link rel="stylesheet" href="/project-group-19/assets/index-9176d8f5.css">
   </head>
   <body>
-    
-    
+    <header class="page-header">
+  <div class="container">
+    <div class="header-container">
+      <div class="text-logo-wrapper">
+        <picture>
+          <source
+            srcset="
+              ../img/hero-header/header-man.png    1x,
+              ../img/hero-header/header-man@2x.png 2x
+            "
+          />
+          <img src="../img/hero-header/" alt="Man sitting in a chair" />
+        </picture>
+
+        <p class="logo-text">jefferson*</p>
+      </div>
+
+      <!-- menu -->
+      <button class="header-menu-btn" type="button" id="menu-btn">Menu</button>
+      <!-- order -->
+      <a class="header-order-btn" href="#order">Order the project</a>
+      <!-- svg burger open -->
+      <button class="icon-burger-btn js-open-menu" type="button" id="icon-burger-btn-open">
+        <svg class="icon-burger" width="28px" height="28px">
+          <use href="../public/sprite.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <section class="hero">
+  <div class="container">
+    <h1 class="hero-title">
+      Hello. <br />I’m Fullstack <br />
+      developer <br />Lloyd Jefferson.
+    </h1>
+
+    <ul class="socials-list">
+      <li class="socials-list-item">
+        <a
+          class="socials-list-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          >IG</a
+        >
+      </li>
+      <li class="socials-list-item">
+        <a
+          class="socials-list-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          >FB</a
+        >
+      </li>
+      <li class="socials-list-item">
+        <a
+          class="socials-list-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          >YT</a
+        >
+      </li>
+      <li class="socials-list-item">
+        <a
+          class="socials-list-link"
+          href="https://github.com/VanoLogin/project-group-19"
+          target="_blank"
+          >GH</a
+        >
+      </li>
+      <li class="socials-list-item">
+        <a
+          class="socials-list-link"
+          href="mailto:lloydjefferson@gmail.com"
+          target="_blank"
+          >lloydjefferson@gmail.com</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
 
     <main>
-      
-      
-      
-      
-      
-      
-      
+      <section class="section-accordion-about-me">
+  <div class="container">
+    <h2 hidden>About me</h2>
+    <div class="container-before-accordion">
+      <div class="container-with-info">
+        <p class="text-before-img">
+          I work with people all over the world to create impressive and
+          <span class="red">functional</span>
+          <span class="grey">websites</span> that reflect each client's unique
+          personality.
+        </p>
+      </div>
+      <img
+        srcset="
+          ../img/desktop-men-about-me@2x.png 1360w,
+          ../img/desktop-men-about-me.png     680w,
+          ../img/tablet-men-about-me@2x.png  1408w,
+          ../img/tablet-men-about-me.png      704w,
+          ../img/mobile-men-about-me@2x.png   686w
+        "
+        sizes="(min-width: 1158px) 680px,(min-width: 768px) 704px, (max-width: 767px) 343px"
+        src="../img/mobile-men-about-me.png"
+        alt="Men"
+      />
+    </div>
+    <ul class="accordion-container list-about-me">
+      <li class="ac item-about-me">
+        <h3 class="ac-header header-about-me">
+          <button type="button" class="ac-trigger trigger-about-me">
+            About me
+          </button>
+        </h3>
+        <div class="ac-panel panel-about-me">
+          <p class="ac-text text-about-me">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+          <p class="ac-text text-about-me">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work. I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </p>
+        </div>
+      </li>
+      <li class="ac item-about-me">
+        <h3 class="ac-header header-about-me">
+          <button type="button" class="ac-trigger trigger-about-me">
+            Role
+          </button>
+        </h3>
+        <div class="ac-panel panel-about-me">
+          <p class="ac-text text-about-me">
+            <br />Frontend development <br />HeadlessCMS, Wordpress
+            <br />Blender (enjoy)
+          </p>
+        </div>
+      </li>
+      <li class="ac item-about-me">
+        <h3 class="ac-header header-about-me">
+          <button type="button" class="ac-trigger trigger-about-me">
+            Education
+          </button>
+        </h3>
+        <div class="ac-panel panel-about-me">
+          <p class="ac-text text-about-me">
+            <br />2018 - 2019 / Frontend Development Diploma, GoIT IT School,
+            New York <br />2019 - 2020 / Advanced Web Development Certificate,
+            GoIT IT School, New York <br />2020 - 2022 / Advanced Blender
+            Animation Techniques, Udemy
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section-benefits">
+  <div class="container">
+    <div class="wrap-container-main">
+      <div class="benefits-header-container">
+        <h2 class="benefits-title">Benefits of working with me</h2>
+      </div>
+  
+      <div class="benefits-content">
+        <ul class="benefits-list">
+          <li class="benefits-list-item">
+            <div class="benefits-svg-container">
+              <svg class="benefits-list-item-svg" width="24px" height="24px">
+                <use xlink:href="../public/sprite.svg#icon-user"></use>
+              </svg>
+            </div>
+  
+            <h3 class="benefits-list-item-title">Expertise</h3>
+            <p class="benefits-list-item-text">
+              As a highly experienced developer, I have deep knowledge of
+              programming and website development.
+            </p>
+          </li>
+          <li class="benefits-list-item">
+            <div class="benefits-svg-container">
+              <svg class="benefits-list-item-svg" width="24px" height="24px">
+                <use xlink:href="../public/sprite.svg#icon-chat"></use>
+              </svg>
+            </div>
+  
+            <h3 class="benefits-list-item-title">Communication</h3>
+            <p class="benefits-list-item-text">
+              Understanding your needs and wants is my priority and I am always
+              open to discussions and corrections.
+            </p>
+          </li>
+          <li class="benefits-list-item">
+            <div class="benefits-svg-container">
+              <svg class="benefits-list-item-svg" width="24px" height="24px">
+                <use xlink:href="../public/sprite.svg#icon-brush"></use>
+              </svg>
+            </div>
+  
+            <h3 class="benefits-list-item-title">Art</h3>
+            <p class="benefits-list-item-text">
+              Thanks to my creative nature, I am ready to accept challenges and
+              help you bring your ideas to life.
+            </p>
+          </li>
+          <li class="benefits-list-item">
+            <div class="benefits-svg-container">
+              <svg class="benefits-list-item-svg" width="24px" height="24px">
+                <use
+                  xlink:href="../public/sprite.svg#icon-hourglass"
+                  width="24px"
+                  height="24px"
+                ></use>
+              </svg>
+            </div>
+  
+            <h3 class="benefits-list-item-title">Urgent execution</h3>
+            <p class="benefits-list-item-text">
+              I understand how important time is to you. Ready to work quickly and
+              efficiently, without reducing the quality of work.
+            </p>
+          </li>
+        </ul>
+        <button class="benefits-order-btn">
+          <a href="#">Order the project</a>
+        </button>
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+      <section class="project">
+  <div class="container">
+    <h2 class="project-title">PROJECT</h2>
+    <div class="swiper project-swiper">
+      <ul class="swiper-wrapper project-swiper-wraper">
+        <li class="swiper-slide project-swiper-wraper-slide">
+          <div class="project-container">
+            <div class="project-package">
+              <div class="item1">
+                <div class="item1-container">
+                  <ul class="item1-skils">
+                    <li class="skils-name">#react</li>
+                    <li class="skils-name">#js</li>
+                    <li class="skils-name">#node js</li>
+                    <li class="skils-name">#git</li>
+                  </ul>
+
+                  <p class="item1-text">
+                    Programming Across Borders: Ideas, Technologies, Innovations
+                  </p>
+
+                  <a
+                    class="item1-button"
+                    href="https://github.com/VanoLogin/project-group-19"
+                  >
+                    See project
+                  </a>
+                </div>
+              </div>
+
+              <div class="item2">
+                <div class="projects-item">
+                  <img
+                    class="item2-img"
+                    src="../img/project-img/slideTwoDog.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide project-swiper-wraper-slide">
+          <div class="project-container">
+            <div class="project-package">
+              <div class="item1">
+                <div class="item1-container">
+                  <ul class="item1-skils">
+                    <li class="skils-name">#react</li>
+                    <li class="skils-name">#js</li>
+                    <li class="skils-name">#node js</li>
+                    <li class="skils-name">#git</li>
+                  </ul>
+
+                  <p class="item1-text">
+                    Programming Across Borders: Ideas, Technologies, Innovations
+                  </p>
+
+                  <a
+                    class="item1-button"
+                    href="https://github.com/VanoLogin/project-group-19"
+                  >
+                    See project
+                  </a>
+                </div>
+              </div>
+
+              <div class="item2">
+                <div class="projects-item">
+                  <img
+                    class="item2-img"
+                    src="../img/project-img/slideThreeFamily.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide project-swiper-wraper-slide">
+          <div class="project-container">
+            <div class="project-package">
+              <div class="item1">
+                <div class="item1-container">
+                  <ul class="item1-skils">
+                    <li class="skils-name">#react</li>
+                    <li class="skils-name">#js</li>
+                    <li class="skils-name">#node js</li>
+                    <li class="skils-name">#git</li>
+                  </ul>
+
+                  <p class="item1-text">
+                    Programming Across Borders: Ideas, Technologies, Innovations
+                  </p>
+
+                  <a
+                    class="item1-button"
+                    href="https://github.com/VanoLogin/project-group-19"
+                  >
+                    See project
+                  </a>
+                </div>
+              </div>
+
+              <div class="item2">
+                <div class="projects-item">
+                  <img
+                    class="item2-img"
+                    src="../img/project-img/slideOnePhone.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="project-swiper-button-container">
+      <div class="swiper-button-prev project-swiper-button-prev">
+        <svg
+          class="project-img-button left-button"
+          fill="FAFAFA"
+          width="24"
+          height="24"
+        >
+          <use href="sprite.svg#icon-arrow-narrow-left"></use>
+        </svg>
+      </div>
+
+      <div class="swiper-button-next project-swiper-button-next">
+        <svg class="project-img-button" fill="FAFAFA" width="24" height="24">
+          <use href="sprite.svg#icon-arrow-narrow-left"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section-faq">
+  <div class="container">
+    <h2 class="title-faq">FAQ</h2>
+    <ul class="accordion-container list-faq">
+      <li class="ac item-faq">
+        <h3 class="ac-header header-faq">
+          <button type="button" class="ac-trigger trigger-faq">
+            What programming languages are most often used in your project?
+          </button>
+        </h3>
+        <div class="ac-panel panel-faq">
+          <p class="ac-text text-faq">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac item-faq">
+        <h3 class="ac-header header-faq">
+          <button type="button" class="ac-trigger trigger-faq">
+            What are the deadlines for the project?
+          </button>
+        </h3>
+        <div class="ac-panel panel-faq">
+          <p class="ac-text text-faq">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac item-faq">
+        <h3 class="ac-header header-faq">
+          <button type="button" class="ac-trigger trigger-faq">
+            What payment methods do you accept?
+          </button>
+        </h3>
+        <div class="ac-panel panel-faq">
+          <p class="ac-text text-faq">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="ac item-faq">
+        <h3 class="ac-header header-faq">
+          <button type="button" class="ac-trigger trigger-faq">
+            How can I contact you?
+          </button>
+        </h3>
+        <div class="ac-panel panel-faq">
+          <p class="ac-text text-faq">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac item-faq">
+        <h3 class="ac-header header-faq">
+          <button type="button" class="ac-trigger trigger-faq">
+            Do you provide advice or support?
+          </button>
+        </h3>
+        <div class="ac-panel panel-faq">
+          <p class="ac-text text-faq">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac item-faq">
+        <h3 class="ac-header header-faq">
+          <button type="button" class="ac-trigger trigger-faq">
+            What does the process of developing a software product look like
+            from idea to implementation?
+          </button>
+        </h3>
+        <div class="ac-panel panel-faq">
+          <p class="ac-text text-faq">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="covers-section">
+    <h2 class="visually-hidden">Covers</h2>
+      <div class="marquee">
+      <div class="marquee__inner">
+        <ul class="photos-list">
+        <li class="animation-photo"><img 
+            src="../img/covers-img/PowerPulse-pc.jpeg" 
+            srcset="../img/covers-img/PowerPulse-pc@2x.jpeg 2x" alt="Power Pulse" 
+            ></li>
+        <li class="animation-photo"><img 
+            src="../img/covers-img/Mimino-pc.jpeg" 
+            srcset="../img/covers-img/Mimino-pc@2x.jpeg 2x"
+            alt="Mimino" 
+            ></li>
+        <li class="animation-photo"><img 
+            src="../img/covers-img/UkrainianArtisty-pc.jpeg" 
+            srcset="../img/covers-img/UkrainianArtisty-pc@2x.jpeg 2x"
+            alt="Ukrainian Artisty" ></li>
+        <li class="animation-photo"><img
+             src="../img/covers-img/Wallet-pc.jpeg" 
+             srcset="../img/covers-img/Wallet-pc@2x.jpeg 2x"
+            alt="Wallet"></li>
+        <li class="animation-photo"><img 
+            src="../img/covers-img/Chego-pc.jpeg" 
+            srcset="../img/covers-img/Chego-pc@2x.jpeg 2x"
+            alt="Chego" ></li>
+        <li class="animation-photo"><img 
+            src="../img/covers-img/EnergyFlow-pc.jpeg" 
+            srcset="../img/covers-img/EnergyFlow-pc@2x.jpeg 2x"
+            alt="Energy Flow"></li>
+        <li class="animation-photo"><img 
+            src="../img/covers-img/Fruitbox-pc.jpeg" 
+            srcset="../img/covers-img/Fruitbox-pc@2x.jpeg 2x"
+            alt="Fruitbox" ></li>
+        <li class="animation-photo"><img 
+            src="../img/covers-img/English-pc.jpeg" 
+            srcset="../img/covers-img/English-pc@2x.jpeg 2x"
+            alt="English" ></li>
+        <li class="animation-photo"><img 
+            src="../img/covers-img/StarlightStudio-pc.jpeg" 
+            srcset="../img/covers-img/StarlightStudio-pc@2x.jpeg 2x"
+            alt="Studio" ></li>
+            <li class="animation-photo"><img 
+            src="../img/covers-img/PowerPulse-pc.jpeg" 
+            srcset="../img/covers-img/PowerPulse-pc@2x.jpeg 2x" alt="Power Pulse" 
+            ></li>
+        <li class="animation-photo"><img 
+            src="../img/covers-img/Mimino-pc.jpeg" 
+            srcset="../img/covers-img/Mimino-pc@2x.jpeg 2x"
+            alt="Mimino" 
+            ></li>
+        </ul>
+      </div>
+    <div class="marquee__inner">
+        <ul class="photos-list">
+            <li class="animation-photo"><img 
+                src="../img/covers-img/EnergyFlow-pc.jpeg" 
+                srcset="../img/covers-img/EnergyFlow-pc@2x.jpeg 2x"
+                alt="Energy Flow"></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/Fruitbox-pc.jpeg" 
+                srcset="../img/covers-img/Fruitbox-pc@2x.jpeg 2x"
+                alt="Fruitbox" ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/English-pc.jpeg" 
+                srcset="../img/covers-img/English-pc@2x.jpeg 2x"
+                alt="English" ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/StarlightStudio-pc.jpeg" 
+                srcset="../img/covers-img/StarlightStudio-pc@2x.jpeg 2x"
+                alt="Studio" ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/PowerPulse-pc.jpeg" 
+                srcset="../img/covers-img/PowerPulse-pc@2x.jpeg 2x" 
+                alt="Power Pulse" 
+                ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/Mimino-pc.jpeg" 
+                srcset="../img/covers-img/Mimino-pc@2x.jpeg 2x"
+                alt="Mimino" 
+                ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/UkrainianArtisty-pc.jpeg" 
+                srcset="../img/covers-img/UkrainianArtisty-pc@2x.jpeg 2x"
+                alt="Ukrainian Artisty" ></li>
+            <li class="animation-photo"><img
+                 src="../img/covers-img/Wallet-pc.jpeg" 
+                 srcset="../img/covers-img/Wallet-pc@2x.jpeg 2x"
+                alt="Wallet"></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/Chego-pc.jpeg" 
+                srcset="../img/covers-img/Chego-pc@2x.jpeg 2x"
+                alt="Chego" ></li>
+              </ul>
+        </div>
+     <div class="marquee__inner">
+        <ul class="photos-list">
+            <li class="animation-photo"><img 
+                src="../img/covers-img/English-pc.jpeg" 
+                srcset="../img/covers-img/English-pc@2x.jpeg 2x"
+                alt="English" ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/StarlightStudio-pc.jpeg" 
+                srcset="../img/covers-img/StarlightStudio-pc@2x.jpeg 2x"
+                alt="Studio" ></li>
+             
+            <li class="animation-photo"><img 
+                src="../img/covers-img/PowerPulse-pc.jpeg" 
+                srcset="../img/covers-img/PowerPulse-pc@2x.jpeg 2x" 
+                alt="Power Pulse" 
+                ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/Mimino-pc.jpeg" 
+                srcset="../img/covers-img/Mimino-pc@2x.jpeg 2x"
+                alt="Mimino" 
+                ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/UkrainianArtisty-pc.jpeg" 
+                srcset="../img/covers-img/UkrainianArtisty-pc@2x.jpeg 2x"
+                alt="Ukrainian Artisty" ></li>
+            <li class="animation-photo"><img
+                 src="../img/covers-img/Wallet-pc.jpeg" 
+                 srcset="../img/covers-img/Wallet-pc@2x.jpeg 2x"
+                alt="Wallet"></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/Chego-pc.jpeg" 
+                srcset="../img/covers-img/Chego-pc@2x.jpeg 2x"
+                alt="Chego" ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/EnergyFlow-pc.jpeg" 
+                srcset="../img/covers-img/EnergyFlow-pc@2x.jpeg 2x"
+                alt="Energy Flow"></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/Fruitbox-pc.jpeg" 
+                srcset="../img/covers-img/Fruitbox-pc@2x.jpeg 2x"
+                alt="Fruitbox" ></li>
+            </ul>
+     </div>
+        <div class="marquee__inner">
+            <ul class="photos-list">
+            <li class="animation-photo"><img 
+                src="../img/covers-img/PowerPulse-pc.jpeg" 
+                srcset="../img/covers-img/PowerPulse-pc@2x.jpeg 2x" 
+                alt="Power Pulse" 
+                ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/Mimino-pc.jpeg" 
+                srcset="../img/covers-img/Mimino-pc@2x.jpeg 2x"
+                alt="Mimino" 
+                ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/UkrainianArtisty-pc.jpeg" 
+                srcset="../img/covers-img/UkrainianArtisty-pc@2x.jpeg 2x"
+                alt="Ukrainian Artisty" ></li>
+              
+            <li class="animation-photo"><img 
+                src="../img/covers-img/Fruitbox-pc.jpeg" 
+                srcset="../img/covers-img/Fruitbox-pc@2x.jpeg 2x"
+                alt="Fruitbox" ></li>
+                <li class="animation-photo"><img 
+                    src="../img/covers-img/Chego-pc.jpeg" 
+                    srcset="../img/covers-img/Chego-pc@2x.jpeg 2x"
+                    alt="Chego" ></li>
+           
+            <li class="animation-photo"><img 
+                src="../img/covers-img/StarlightStudio-pc.jpeg" 
+                srcset="../img/covers-img/StarlightStudio-pc@2x.jpeg 2x"
+                alt="Studio" ></li>
+         <li class="animation-photo"><img
+                    src="../img/covers-img/Wallet-pc.jpeg" 
+                    srcset="../img/covers-img/Wallet-pc@2x.jpeg 2x"
+                   alt="Wallet"></li>
+               
+                   <li class="animation-photo"><img 
+                    src="../img/covers-img/English-pc.jpeg" 
+                    srcset="../img/covers-img/English-pc@2x.jpeg 2x"
+                    alt="English" ></li>
+               <li class="animation-photo"><img 
+                   src="../img/covers-img/EnergyFlow-pc.jpeg"  
+                   srcset="../img/covers-img/EnergyFlow-pc@2x.jpeg 2x"
+                   alt="Energy Flow"></li>
+                 </ul>
+        </div>
+        <div class="marquee__inner">
+            <ul class="photos-list">
+                <li class="animation-photo"><img 
+                    src="../img/covers-img/Chego-pc.jpeg" 
+                    srcset="../img/covers-img/Chego-pc@2x.jpeg 2x"
+                    alt="Chego" ></li>
+             <li class="animation-photo"><img
+                        src="../img/covers-img/Wallet-pc.jpeg" 
+                        srcset="../img/covers-img/Wallet-pc@2x.jpeg 2x"
+                       alt="Wallet"></li>
+                <li class="animation-photo "><img 
+                    src="../img/covers-img/PowerPulse-pc.jpeg" 
+                    srcset="../img/covers-img/PowerPulse-pc@2x.jpeg 2x" 
+                    alt="Power Pulse" 
+                    ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/UkrainianArtisty-pc.jpeg" 
+                srcset="../img/covers-img/UkrainianArtisty-pc@2x.jpeg 2x"
+                alt="Ukrainian Artisty" ></li>
+         
+            <li class="animation-photo"><img 
+                src="../img/covers-img/Fruitbox-pc.jpeg" 
+                srcset="../img/covers-img/Fruitbox-pc@2x.jpeg 2x"
+                alt="Fruitbox" ></li>
+            <li class="animation-photo"><img 
+                src="../img/covers-img/English-pc.jpeg" 
+                srcset="../img/covers-img/English-pc@2x.jpeg 2x"
+                alt="English" ></li>
+          
+               <li class="animation-photo"><img 
+                   src="../img/covers-img/EnergyFlow-pc.jpeg"  
+                   srcset="../img/covers-img/EnergyFlow-pc@2x.jpeg 2x"
+                   alt="Energy Flow"></li>
+                   <li class="animation-photo "><img 
+                    src="../img/covers-img/StarlightStudio-pc.jpeg" 
+                    srcset="../img/covers-img/StarlightStudio-pc@2x.jpeg 2x"
+                    alt="Studio" ></li>
+                    <li class="animation-photo"><img 
+                        src="../img/covers-img/Mimino-pc.jpeg" 
+                        srcset="../img/covers-img/Mimino-pc@2x.jpeg 2x"
+                        alt="Mimino" 
+                        ></li>
+                 </ul>
+
+        </div>
+     </div>
+</section>
+      <section class="reviews">
+  <div class="container">
+    <h2 class="header-reviews">Reviews</h2>
+    <div class="swiper reviews-swiper">
+      <ul class="swiper-wrapper reviews-swiper-wrapper"></ul>
+
+      <!-- control buttons -->
+      <div class="swiper-button-wrap">
+        <div class="swiper-button-prev swiper-reviews-button-prev">
+          <svg
+            class="reviews-img-button left-button"
+            width="24"
+            height="24"
+            fill="FAFAFA"
+          >
+            <use href="sprite.svg#icon-arrow-narrow-left"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next swiper-reviews-button-next">
+          <svg class="reviews-img-button" width="24" height="24" fill="FAFAFA">
+            <use href="sprite.svg#icon-arrow-narrow-left"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="footer">
+  <div class="footer-bgrd">
+    <div class="container">
+      <div class="footer-wraper"></div>
+      <div class="footer-header">
+        <a href="/" class="footer-logo">
+          <picture>
+            <source
+              srcset="
+                ../img/footer/image-mob-1x.png 1x,
+                ../img/footer/image-mob-2x.png 2x
+              "
+              media="(max-width: 768px)" />
+            <source
+              srcset="
+                ../img/footer/image-1x.png 1x,
+                ../img/footer/image-2x.png 2x
+              "
+              media="(min-width: 768px)" />
+            <img
+              src="../img/footer/image-1x.png"
+              alt="portrait"
+              width="70"
+              height="70"
+          /></picture>
+        </a>
+        <h2 class="footer-title">
+          <span class="start-title-span"
+            >Let's <span class="footer-span">work</span></span
+          >
+          <span> together</span>
+        </h2>
+      </div>
+      <form class="footer-form">
+        <label for="email">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            placeholder="clients@gmail.com"
+            required
+            autofocus
+          />
+        </label>
+        <label for="comments">
+          <input
+            class="test"
+            type="text"
+            name="comments"
+            id="comments"
+            placeholder="comments"
+            required
+          />
+        </label>
+        <button type="submit" class="footer-btn">Send</button>
+      </form>
+
+      <ul class="footer-contacts">
+        <li class="footer-item">
+          <a href="mailto:" class="footer-link">lloydjefferson@gmail.com</a>
+        </li>
+        <li class="footer-item">
+          <a href="tel:+3801111111111" class="footer-link"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!----------                 modal       -->
+
+      <div class="modal">
+  <div class="modal-container">
+    <button class="modal-close-btn" type="button">
+      <svg class="modal-close-svg" width="28px" height="28px">
+        <use href="../public/sprite.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+    <ul class="modal-menu-list">
+      <li class="menu-list-modal"><a href="#about-me">About me</a></li>
+      <li class="menu-list-modal"><a href="#benefits">Benefits</a></li>
+      <li class="menu-list-modal"><a href="#reviews">Projects</a></li>
+      <li class="menu-list-modal"><a href="#faq">FAQ</a></li>
+    </ul>
+    <button class="modal-order-btn">
+      <a href="#footer"> Order the project </a>
+    </button>
+  </div>
+</div>
+
+      <div class="footer-backdrop">
+  <div class="footer-modal">
+    <button class="modal-close-btn" type="button">
+      <svg class="modal-close-btn-icon">
+        <use href="../public/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <div class="modal-content">
+      <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+      <p class="modal-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</div>
+
+
     </main>
 
     
