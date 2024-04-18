@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+}
+li{
+    list-style: none;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  .covers-section{
+    background-image: url('../../img/covers-img/elements_vectors.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+
+}
+  .marquee {
+    justify-content: center;
+    right: -20px;
+    height: 100vh;
+   
+    // max-width: 100%;
+    // height: 508px;
+    // @include tablet {
+    //     height: 960px;
+    //     }
+      
+  }
+  .marquee__inner {
+    display: flex;
+    transform: rotate(16deg) translateY(-200px);
+    margin-bottom: 10px;
+  align-items: flex-start;
+  }
+  
+  .photos-list {
+  display: flex;
+  margin-bottom: 10px;
+  margin-right: 15px;
+
+  }
+  
+  .animation-photo {
+    margin-right: 30px; 
+    width: 282px; 
+    height: 162px;
+    animation: scrolling 15s linear infinite;
+    white-space: nowrap;
+    // animation-name: animation;
+    // animation-duration: 15s;
+    // animation-timing-function: ease-in-out;
+    // animation-iteration-count: infinite;
+    @include tablet{
+        height: 314px;
+        width: 544px;
+        margin-bottom: 15px;
+        }
+}
+  
+  .animation-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    @include tablet{
+        height: 314px;
+        max-width: 544px;
+        }
+    
+  }
+  @keyframes scrolling {
+     from {
+      transform: translateX(-20%); 
+    }
+    to{
+      transform: translateX(-180%); 
+  }
+}
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;}
+
