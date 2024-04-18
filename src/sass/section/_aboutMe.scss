@@ -82,14 +82,14 @@ li.item-about-me {
   padding: 0;
 }
 .ac .ac-trigger.trigger-about-me::after {
-  content: url('/img/arrow-down-circle.svg');
+  content: url('./img/arrow-down-circle.svg');
   display: inline-block;
   background-position: 0px 0px;
   width: 16px;
   height: 16px;
 }
 .ac.is-active > .ac-header .ac-trigger.trigger-about-me::after {
-  content: url('/img/arrow-up-circle.svg');
+  content: url('./img/arrow-up-circle.svg');
   width: 16px;
   height: 16px;
 }
