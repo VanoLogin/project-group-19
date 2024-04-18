@@ -1,1 +1,1 @@
-import './js/swipers/projectSectionSwiper';
+import './js/swipers/reviewsSectionSwiper';
