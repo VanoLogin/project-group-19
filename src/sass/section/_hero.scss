@@ -1,0 +1,106 @@
+$text-color: #fafafa;
+
+.hero {
+  position: relative; /* Ensure z-index works */
+  background-image: url(../img/hero-header/mobile-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 40.6vh;
+
+  @include tablet {
+    background-image: url(../img/hero-header/tablet-bg.png);
+    padding-top: 43.4vh;
+  }
+  @include desktop {
+    background-image: url(../img/hero-header/desktop-bg.png);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    z-index: 1;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    @media (max-width: 375px) {
+      padding: 0 8px;
+    }
+  }
+}
+
+.hero-title {
+  position: relative;
+  z-index: 3;
+  @include tablet {
+    width: 632px;
+  }
+  @include desktop {
+    min-width: 1084px;
+  }
+}
+
+.hero-title-socials-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @include desktop {
+    align-items: center;
+  }
+}
+
+.socials-list {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  gap: 4px;
+  row-gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  align-self: flex-end;
+
+  @include tablet {
+    align-self: flex-end;
+  }
+
+  .socials-list-item {
+    font-family: 'Inter Tight';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    letter-spacing: -0.02em;
+    color: $text-color;
+  }
+
+  .socials-list-item:first-child > a {
+    padding: 10px 12px;
+  }
+
+  .socials-list-item:nth-child(4) > a {
+    padding: 10px 9px;
+  }
+
+  .socials-list-item:last-child > a {
+    padding: 10px 12px;
+  }
+
+  .socials-list-link {
+    box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px;
+    display: inline-block;
+  }
+}
