@@ -1,0 +1,129 @@
+.reviews > .container{
+            @media screen and (min-width: 375px) {
+                max-width: 375px;
+            }
+    
+            @media screen and (min-width: 768px) {
+                max-width: 768px;
+            }
+    
+            @media screen and (min-width: 1440px) {
+                max-width: 1440px;
+            }
+        }
+
+.reviews{
+    background-color: #1c1d20;
+}
+
+
+.header-reviews{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.4);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    width: 284px;
+}
+
+.review-swiper-slide {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 20px;
+    padding: 32px 24px;
+    display: block;
+    box-sizing: border-box;
+    // min-height: 352px;
+}
+
+.review-person-photo{
+    margin-bottom: 32px;
+    width: 48px;
+    height: 48px;
+}
+
+.review-person-name{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    margin-bottom: 8px;
+    text-align: left;
+
+}
+
+.review-text{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+    text-align: left;
+}
+
+.swiper-button-wrap{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+
+    @include tablet{
+        gap: 20px;
+    }
+}
+
+.not-found-message{
+    margin: 0 auto;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+    text-align: center;
+}
+
+.reviews-img-button {
+    @include tablet {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.left-button{
+    transform: scale(-1, -1)
+}
+
+.swiper-reviews-button-prev,
+.swiper-reviews-button-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    padding: 14px;
+    width: 52px;
+    height: 52px;
+
+    @include tablet {
+        padding: 18px;
+        width: 68px;
+        height: 68px;
+    }
+}
+
+.swiper-button-disabled.swiper-reviews-button-prev,
+.swiper-button-disabled.swiper-reviews-button-next {
+    border-color: rgba(250, 250, 250, 0.2) ;
+    .reviews-img-button{
+        opacity: 20%;
+    }
+}
