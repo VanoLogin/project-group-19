@@ -1,5 +1,5 @@
 //-> Projects
-import './js/swipers/projectSectionSwiper.js'
+import './js/swipers/projectSectionSwiper.js';
 
 //-> Review
 import './js/swipers/reviewsSectionSwiper';
@@ -20,4 +20,4 @@ import './js/accordion/about-accordion.js';
 //->FaQ-accardion
 import './js/accordion/faq-accordion.js';
 
-
+import './js/swipers/aboutMeSectionSwiper.js';

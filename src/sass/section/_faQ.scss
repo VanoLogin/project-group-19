@@ -2,6 +2,8 @@
   background-color: #1c1d20;
   display: flex;
   flex-direction: column;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .title-faq {
@@ -12,18 +14,14 @@
   line-height: 24px;
   letter-spacing: -2%;
   text-align: left;
+  margin-bottom: 32px;
 }
 
-.list-faq {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 20px;
-}
 li.item-faq {
   background-color: #1c1d20;
   border: 0;
   border-top: 1px solid rgba(250, 250, 250, 0.2);
-  padding: 30px 20px;
+  padding: 20px 0;
   margin-top: 0;
 }
 .list-faq {
@@ -36,6 +34,12 @@ li.item-faq {
 li.item-faq:nth-child(odd) {
   @include desktop {
     border-right: 1px solid rgba(250, 250, 250, 0.2);
+    padding-right: 30px;
+  }
+}
+li.item-faq:nth-child(even) {
+  @include desktop {
+    padding-left: 30px;
   }
 }
 li.item-faq:nth-child(5) {
@@ -48,21 +52,26 @@ li.item-faq:nth-child(6) {
 }
 
 .ac .ac-trigger.trigger-faq::after {
-  content: url('../../img/SVG/arrow-down-circle.svg');
+  content: '';
   display: inline-block;
   background-position: 0px 0px;
-  width: 16px;
-  height: 16px;
 }
 
 .ac.is-active > .ac-header .ac-trigger.trigger-faq::after {
-  content: url('../../img/SVG/arrow-up-circle.svg');
-  width: 16px;
-  height: 16px;
+  content: '';
 }
-.ac-trigger.trigger-faq {
+.ac .ac-trigger.trigger-faq {
   color: rgb(250, 250, 250) !important;
   font-family: Inter Tight;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 
 .text-faq {
@@ -76,4 +85,18 @@ li.item-faq:nth-child(6) {
 .ac-panel {
   display: block;
   width: 100%;
+}
+
+.span-faq-btn-ac {
+  width: 265px;
+  @include tablet {
+    &:not(:last-child) {
+      width: 100%;
+    }
+  }
+}
+.span-faq-btn-ac.span-longer-width {
+  @include tablet {
+    width: 465px;
+  }
 }

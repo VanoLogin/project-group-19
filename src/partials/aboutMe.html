@@ -10,78 +10,164 @@
           personality.
         </p>
       </div>
-      <img
-        srcset="
-          ../img/desktop-men-about-me@2x.png 1360w,
-          ../img/desktop-men-about-me.png     680w,
-          ../img/tablet-men-about-me@2x.png  1408w,
-          ../img/tablet-men-about-me.png      704w,
-          ../img/mobile-men-about-me@2x.png   686w
-        "
-        sizes="(min-width: 1158px) 680px,(min-width: 768px) 704px, (max-width: 767px) 343px"
-        src="../img/mobile-men-about-me.png"
-        alt="Men"
-      />
+      <div class="img-container-about">
+        <img
+          class="img-about-me"
+          srcset="
+            ../img/desktop-men-about-me@2x.png 1360w,
+            ../img/desktop-men-about-me.png     680w,
+            ../img/tablet-men-about-me@2x.png  1408w,
+            ../img/tablet-men-about-me.png      704w,
+            ../img/mobile-men-about-me@2x.png   686w
+          "
+          sizes="(min-width: 1158px) 680px,(min-width: 768px) 704px, (max-width: 767px) 343px"
+          src="../img/mobile-men-about-me.png"
+          alt="Men"
+        />
+      </div>
     </div>
     <ul class="accordion-container list-about-me">
       <li class="ac item-about-me">
-        <h3 class="ac-header header-about-me">
+        <h3 class="ac-header header-about-me headers-section-text">
           <button type="button" class="ac-trigger trigger-about-me">
             About me
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-about-me">
-          <p class="ac-text text-about-me">
-            I am Lloyd Jefferson, a talented programmer with extensive expertise
-            in software development. I have an understanding of different
-            programming languages and technologies, always ready to improve my
-            skills. I always follow the latest trends and look for
-            unconventional, creative solutions to problems. I have a high level
-            of analytical skills and am able to effectively solve even the most
-            difficult tasks encountered on the way.
-          </p>
-          <p class="ac-text text-about-me">
-            Able to work both independently and in a team. I can effectively
-            cooperate with colleagues, exchanging ideas and finding optimal
-            solutions. Professional maturity allows you to calmly cope with
-            challenges and stressful situations, while maintaining a high
-            quality of work. I am always looking for opportunities for
-            self-improvement. I actively study new technologies and practices to
-            stay abreast of the latest innovations. I have a strong
-            understanding of various programming languages, frameworks and
-            architectural concepts that allow me to create efficient and
-            scalable software.
-          </p>
+          <div class="about-acc-wraper">
+            <p class="ac-text text-about-me">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages and technologies, always ready to
+              improve my skills. I always follow the latest trends and look for
+              unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </p>
+            <p class="ac-text text-about-me">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work. I am always looking for opportunities for
+              self-improvement. I actively study new technologies and practices
+              to stay abreast of the latest innovations. I have a strong
+              understanding of various programming languages, frameworks and
+              architectural concepts that allow me to create efficient and
+              scalable software.
+            </p>
+          </div>
         </div>
       </li>
       <li class="ac item-about-me">
-        <h3 class="ac-header header-about-me">
+        <h3 class="ac-header header-about-me headers-section-text">
           <button type="button" class="ac-trigger trigger-about-me">
             Role
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-about-me">
-          <p class="ac-text text-about-me">
-            <br />Frontend development <br />HeadlessCMS, Wordpress
-            <br />Blender (enjoy)
-          </p>
+          <div class="about-acc-wraper">
+            <p class="ac-text text-about-me">
+              <br />Frontend development <br />HeadlessCMS, Wordpress
+              <br />Blender (enjoy)
+            </p>
+          </div>
         </div>
       </li>
       <li class="ac item-about-me">
-        <h3 class="ac-header header-about-me">
+        <h3 class="ac-header header-about-me headers-section-text">
           <button type="button" class="ac-trigger trigger-about-me">
             Education
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-about-me">
-          <p class="ac-text text-about-me">
-            <br />2018 - 2019 / Frontend Development Diploma, GoIT IT School,
-            New York <br />2019 - 2020 / Advanced Web Development Certificate,
-            GoIT IT School, New York <br />2020 - 2022 / Advanced Blender
-            Animation Techniques, Udemy
-          </p>
+          <div class="about-acc-wraper">
+            <p class="ac-text text-about-me">
+              <br />2018 - 2019 / Frontend Development Diploma, GoIT IT School,
+              New York <br />2019 - 2020 / Advanced Web Development Certificate,
+              GoIT IT School, New York <br />2020 - 2022 / Advanced Blender
+              Animation Techniques, Udemy
+            </p>
+          </div>
         </div>
       </li>
     </ul>
+  </div>
+  <div class="about-me-swiper-section container">
+    <div class="swiper about-me-swiper-container">
+      <ul class="swiper-wrapper about-me-swiper-wrapper-list">
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">Soft skills</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">HTML/CSS</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">JavaScript</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">React</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">Node.js</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">React Native</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">Soft skills</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">HTML/CSS</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">JavaScript</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">React</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">Node.js</button>
+        </li>
+        <li class="about-me-swiper-wrapper-item swiper-slide">
+          <button class="about-me-swiper-btn">React Native</button>
+        </li>
+      </ul>
+    </div>
+    <div class="about-me-swiper-btn-next swiper-button-next">
+      <svg class="about-me-arrow-next" width="28" height="28">
+        <use href="./img/sprite.svg#icon-arrow-narrow-right"></use>
+      </svg>
+    </div>
   </div>
 </section>

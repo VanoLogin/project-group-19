@@ -5,25 +5,26 @@
 }
 .container-before-accordion {
   margin-top: 64px;
-  margin-bottom: 32px;
-  @include tablet {
-    margin: 96px 32px 64px 32px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 16px;
   @include desktop {
-    display: flex;
+    flex-wrap: nowrap;
     gap: 16px;
-    margin-bottom: 96px;
   }
 }
 .container-with-info {
   border-radius: 24px;
   background: rgb(36, 37, 39);
   padding: 32px;
-  margin-bottom: 16px;
-  min-height: 500px;
+  height: 500px;
+  max-width: 500px;
+
   @include tablet {
     padding: 64px;
     min-height: 700px;
+    max-width: 700px;
   }
   @include desktop {
     margin-bottom: 0;
@@ -37,9 +38,18 @@
   line-height: 28px;
   text-align: left;
   text-transform: uppercase;
+
   @include tablet {
     font-size: 38px;
     line-height: 40px;
+  }
+}
+.img-about-me {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 24px;
+  @include tablet {
+    height: 700px;
   }
 }
 .red {
@@ -56,30 +66,41 @@ li.item-about-me {
   background-color: #1c1d20;
   border: 0;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  padding: 30px 20px;
+  padding: 30px 0;
   margin-top: 0;
   &:not(:first-child) {
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
 }
-// // li.item-about-me:nth-child(odd) {
-// //   @include desktop {
-// //     border-right: 1px solid rgba(250, 250, 250, 0.2);
-// //   }
-// // }
-// li.item-about-me:nth-child(5) {
-//   @include desktop {
-//     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-//   }
-// }
-// li.item-about-me:last-child {
-//   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-// }
-// li.item-about-me:first-child{
-//   border-bottom: none
-// }
+
 .ac .ac-trigger.trigger-about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0;
+  text-transform: uppercase;
+}
+.svg-about-div {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+}
+.accordion-button-icon-about-me {
+  overflow: visible;
+  fill: #fafafa;
+  stroke: #fafafa;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.accordion-button-icon-about-me.clicked {
+  transform: rotate(0);
+}
+.accordion-button-icon-about-me {
+  transform: rotate(-180deg);
 }
 .ac .ac-trigger.trigger-about-me::after {
   content: url('../img/arrow-down-circle.svg');
@@ -105,3 +126,13 @@ li.item-about-me {
   display: block;
   width: 100%;
 }
+.about-acc-wraper {
+  @include desktop {
+    width: 50%;
+    margin-left: 50%;
+  }
+}
+
+
+
+/// swiper 
