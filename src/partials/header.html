@@ -5,11 +5,11 @@
         <picture>
           <source
             srcset="
-              ../img/hero-header/header-man.png    1x,
-              ../img/hero-header/header-man@2x.png 2x
+              ./img/hero-header/header-man.png    1x,
+              ./img/hero-header/header-man@2x.png 2x
             "
           />
-          <img src="../img/hero-header/" alt="Man sitting in a chair" />
+          <img src="./img/hero-header/header-man.png" alt="Man sitting in a chair" />
         </picture>
 
         <p class="logo-text">jefferson*</p>
@@ -20,9 +20,13 @@
       <!-- order -->
       <a class="header-order-btn" href="#order">Order the project</a>
       <!-- svg burger open -->
-      <button class="icon-burger-btn js-open-menu" type="button" id="icon-burger-btn-open">
+      <button
+        class="icon-burger-btn js-open-menu"
+        type="button"
+        id="icon-burger-btn-open"
+      >
         <svg class="icon-burger" width="28px" height="28px">
-          <use href="../public/sprite.svg#icon-burger-menu"></use>
+          <use href="./img/sprite.svg#icon-burger-menu"></use>
         </svg>
       </button>
     </div>
