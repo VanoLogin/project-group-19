@@ -9,6 +9,10 @@
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 16px;
+  @media (min-width: 1000px) {
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
   @include desktop {
     flex-wrap: nowrap;
     gap: 16px;
@@ -23,11 +27,18 @@
 
   @include tablet {
     padding: 64px;
-    min-height: 700px;
-    max-width: 700px;
+    min-height: 550px;
+    max-width: 550px;
   }
+  @media (min-width: 1000px) {
+    min-height: 550px;
+    max-width: 550px;
+  }
+
   @include desktop {
     margin-bottom: 0;
+    min-height: 700px;
+    max-width: 700px;
   }
 }
 .text-before-img {
@@ -49,6 +60,12 @@
   object-fit: cover;
   border-radius: 24px;
   @include tablet {
+    height: 500px;
+  }
+  @media (min-width: 1000px) {
+    height: 550px;
+  }
+  @include desktop {
     height: 700px;
   }
 }
@@ -132,7 +149,83 @@ li.item-about-me {
     margin-left: 50%;
   }
 }
+.item-about-me.is-active .accordion-button-icon-about-me {
+  transform: rotate(180deg);
+}
+/// swiper
+.about-me-swiper-section {
+  margin-top: 95px;
+  position: relative;
+}
 
+.swiper.about-me-swiper-container {
+  width: 260px;
+  margin-left: 0;
+  height: 130px;
+  @media (min-width: 500px) {
+    width: 420px;
+  }
 
+  @include mini-tablet {
+    width: 600px;
+    height: 200px;
+  }
+  @media (min-width: 1000px) {
+    width: 900px;
+  }
 
-/// swiper 
+  @include desktop {
+    // width: 87.2%;
+    width: 1000px;
+  }
+
+  @media (min-width: 1310px) {
+    width: 1200px;
+  }
+}
+.about-me-swiper-wrapper-list.swiper-wrapper {
+  width: 100%;
+}
+
+.about-me-swiper-wrapper-item.swiper-slide,
+.about-me-swiper-btn {
+  width: 130px;
+  height: 130px;
+
+  @include mini-tablet {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.about-me-swiper-btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: inline-block;
+  color: #fafafa;
+  transition: 0.5s;
+  text-align: center;
+  font-family: 'Inter Tight', sans-serif;
+  padding: 50px 30px;
+  @include mini-tablet {
+    padding: 88px 52px;
+  }
+}
+.about-me-swiper-wrapper-item.swiper-slide.swiper-slide-active
+  > p.about-me-swiper-btn {
+  background-color: var(--main-accent-color);
+}
+
+.about-me-swiper-wrapper-item.swiper-slide {
+  width: auto;
+}
+.about-me-swiper-btn-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-me-img-button {
+  opacity: 0.2;
+}

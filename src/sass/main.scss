@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 //utils style
 
 @import './utils/resetStyle';
@@ -9,8 +13,6 @@
 @import './components/container';
 @import './components/titles';
 @import './components/section';
-
-
 
 // section styles
 
