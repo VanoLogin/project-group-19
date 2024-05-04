@@ -21,9 +21,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-
+  margin-top: 64px;
   padding: 32px 0;
-
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -128,7 +127,7 @@ body {
 .footer input {
   padding: 0px 0px 20px;
   background-color: transparent;
-  width: 290px;
+  width: 100%;
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   outline: none;
@@ -164,42 +163,37 @@ body {
   }
 
   @include desktop {
-    // width: 390px;
+    width: 390px;
   }
 }
 
 .footer input#comments {
-  max-width: 343px;
-
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .footer-btn {
-  margin-top: 16px;
+  margin-top: 32px;
   border-radius: 50px;
   width: fit-content;
-  padding: 40px 32px 41px;
+  padding: 40px 32px;
   border: none;
   background-color: var(--button-text);
   color: var(--main-text);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-
+  border-radius: 50%;
   &:hover {
     background-color: #e0373f;
   }
-
   @include tablet {
     margin-top: 0;
-    border-radius: 100px;
-    padding: 65px 57px 66px;
+    padding: 65px 57px;
   }
-
   @include desktop {
-    margin-left: 500px;
+    margin-left: 64px;
   }
 }
 
@@ -262,7 +256,7 @@ body {
   border: 1px solid rgba(250, 250, 250, 0.1);
   border-radius: 20px;
   padding: 64px 32px;
-width: 300px;
+  width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -318,7 +312,6 @@ width: 300px;
 }
 
 .test {
-  max-width: 245px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

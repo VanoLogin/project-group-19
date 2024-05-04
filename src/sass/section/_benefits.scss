@@ -1,5 +1,6 @@
 .section-benefits {
   background-color: #1c1d20;
+  margin-top: 64px;
 }
 .benefits-title {
   font-family: 'Inter Tight', sans-serif;
@@ -25,14 +26,13 @@
   margin-top: 64px;
 }
 .benefits-list {
-  display: block;
-  @include tablet {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
   @include desktop {
     flex-direction: row;
     flex-wrap: wrap;
@@ -46,10 +46,9 @@
   &:not(:last-child) {
     margin-bottom: 16px;
     @include tablet {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
-
 }
 .benefits-svg-container {
   border-radius: 10px;
@@ -79,12 +78,12 @@
   letter-spacing: -0.02em;
   color: #fafafa;
   background-color: inherit;
-  margin-top: 82px;
+  margin-top: 64px;
 }
 
 .benefits-content {
   @include desktop {
-    width: 50%;
+    width: 64%;
   }
 }
 .benefits-header-container {

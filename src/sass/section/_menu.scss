@@ -43,14 +43,22 @@
   text-decoration-skip-ink: none;
   color: #fafafa;
   display: inline-block;
-  &:not(:last-child) {
-    margin-bottom: 12px;
-  }
+ @include tablet {
+  font-size: 24px;
+  
+ }
+
 }
 .menu-list-modal {
   &:not(:last-child) {
     margin-bottom: 12px;
+    @include tablet {
+      margin-bottom: 16px;
+  
+    }
   }
+  
+
 }
 .modal-close-btn {
   width: 28px;
@@ -71,7 +79,8 @@
   border: none;
   border-radius: 60px;
   cursor: pointer;
-  //   position: relative;
+    position: relative;
+    top: 64px;
 }
 
 ////

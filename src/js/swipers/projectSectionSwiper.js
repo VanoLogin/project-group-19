@@ -1,21 +1,18 @@
 import Swiper from 'swiper';
+import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 
-const swiper = new Swiper('.project-swiper', {
-  loop: false,
-  speed: 1000,
-  grabCursor: true,
-  spaceBetween: 60, 
-
+const swiperProj = new Swiper('.projSwiper', {
+  modules: [Navigation, Keyboard],
+  slidesPerView: 1,
+  spaceBetween: 68,
+  centeredSlidesBounds: true,
   keyboard: {
     enabled: true,
-},
-
-  navigation: {
-    nextEl: '.project-swiper-button-next',
-    prevEl: '.project-swiper-button-prev',
   },
-
-
-
+  clickable: true,
+  navigation: {
+    nextEl: '.swiper-projects-button-next',
+    prevEl: '.swiper-projects-button-prev',
+  },
 });
