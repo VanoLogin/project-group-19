@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/project-group-19/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-group-19/assets/vendor-f8d0183e.js">
     <link rel="stylesheet" href="/project-group-19/assets/vendor-d2eacb2b.css">
-    <link rel="stylesheet" href="/project-group-19/assets/index-b7234d16.css">
+    <link rel="stylesheet" href="/project-group-19/assets/index-932864e5.css">
   </head>
   <body>
     <header class="page-header">
@@ -43,7 +43,7 @@
         id="icon-burger-btn-open"
       >
         <svg class="icon-burger" width="28px" height="28px">
-          <use href="/project-group-19/assets/sprite-9f0eb2c4.svg#icon-burger-menu"></use>
+          <use href="/project-group-19/assets/sprite-efd42d59.svg#icon-burger-menu"></use>
         </svg>
       </button>
     </div>
@@ -116,73 +116,165 @@
           personality.
         </p>
       </div>
-      <img
-        srcset="/project-group-19/assets/desktop-men-about-me@2x-c89071e5.png 1360w, /project-group-19/assets/desktop-men-about-me-5bdb2d06.png 680w, /project-group-19/assets/tablet-men-about-me@2x-b0557e2e.png 1408w, /project-group-19/assets/tablet-men-about-me-89842250.png 704w, /project-group-19/assets/mobile-men-about-me@2x-892d278f.png 686w"
-        sizes="(min-width: 1158px) 680px,(min-width: 768px) 704px, (max-width: 767px) 343px"
-        src="/project-group-19/assets/mobile-men-about-me-7a06996b.png"
-        alt="Men"
-      />
+      <div class="img-container-about">
+        <img
+          class="img-about-me"
+          srcset="
+            ../img/desktop-men-about-me@2x.png 1360w,
+            ../img/desktop-men-about-me.png     680w,
+            ../img/tablet-men-about-me@2x.png  1408w,
+            ../img/tablet-men-about-me.png      704w,
+            ../img/mobile-men-about-me@2x.png   686w
+          "
+          sizes="(min-width: 1158px) 680px,(min-width: 768px) 704px, (max-width: 767px) 343px"
+          src="../img/mobile-men-about-me.png"
+          alt="Men"
+        />
+      </div>
     </div>
     <ul class="accordion-container list-about-me">
       <li class="ac item-about-me">
-        <h3 class="ac-header header-about-me">
+        <h3 class="ac-header header-about-me headers-section-text">
           <button type="button" class="ac-trigger trigger-about-me">
             About me
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-about-me">
-          <p class="ac-text text-about-me">
-            I am Lloyd Jefferson, a talented programmer with extensive expertise
-            in software development. I have an understanding of different
-            programming languages and technologies, always ready to improve my
-            skills. I always follow the latest trends and look for
-            unconventional, creative solutions to problems. I have a high level
-            of analytical skills and am able to effectively solve even the most
-            difficult tasks encountered on the way.
-          </p>
-          <p class="ac-text text-about-me">
-            Able to work both independently and in a team. I can effectively
-            cooperate with colleagues, exchanging ideas and finding optimal
-            solutions. Professional maturity allows you to calmly cope with
-            challenges and stressful situations, while maintaining a high
-            quality of work. I am always looking for opportunities for
-            self-improvement. I actively study new technologies and practices to
-            stay abreast of the latest innovations. I have a strong
-            understanding of various programming languages, frameworks and
-            architectural concepts that allow me to create efficient and
-            scalable software.
-          </p>
+          <div class="about-acc-wraper">
+            <p class="ac-text text-about-me">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages and technologies, always ready to
+              improve my skills. I always follow the latest trends and look for
+              unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </p>
+            <p class="ac-text text-about-me">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work. I am always looking for opportunities for
+              self-improvement. I actively study new technologies and practices
+              to stay abreast of the latest innovations. I have a strong
+              understanding of various programming languages, frameworks and
+              architectural concepts that allow me to create efficient and
+              scalable software.
+            </p>
+          </div>
         </div>
       </li>
       <li class="ac item-about-me">
-        <h3 class="ac-header header-about-me">
+        <h3 class="ac-header header-about-me headers-section-text">
           <button type="button" class="ac-trigger trigger-about-me">
             Role
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-about-me">
-          <p class="ac-text text-about-me">
-            <br />Frontend development <br />HeadlessCMS, Wordpress
-            <br />Blender (enjoy)
-          </p>
+          <div class="about-acc-wraper">
+            <p class="ac-text text-about-me">
+              <br />Frontend development <br />HeadlessCMS, Wordpress
+              <br />Blender (enjoy)
+            </p>
+          </div>
         </div>
       </li>
       <li class="ac item-about-me">
-        <h3 class="ac-header header-about-me">
+        <h3 class="ac-header header-about-me headers-section-text">
           <button type="button" class="ac-trigger trigger-about-me">
             Education
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-about-me">
-          <p class="ac-text text-about-me">
-            <br />2018 - 2019 / Frontend Development Diploma, GoIT IT School,
-            New York <br />2019 - 2020 / Advanced Web Development Certificate,
-            GoIT IT School, New York <br />2020 - 2022 / Advanced Blender
-            Animation Techniques, Udemy
-          </p>
+          <div class="about-acc-wraper">
+            <p class="ac-text text-about-me">
+              <br />2018 - 2019 / Frontend Development Diploma, GoIT IT School,
+              New York <br />2019 - 2020 / Advanced Web Development Certificate,
+              GoIT IT School, New York <br />2020 - 2022 / Advanced Blender
+              Animation Techniques, Udemy
+            </p>
+          </div>
         </div>
       </li>
     </ul>
+    <div class="about-me-swiper-section">
+      <div class="swiper about-me-swiper-container">
+        <ul class="swiper-wrapper about-me-swiper-wrapper-list">
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">Soft skills</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">HTML/CSS</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">JavaScript</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">React</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">Node.js</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">React Native</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">Soft skills</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">HTML/CSS</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">JavaScript</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">React</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">Node.js</p>
+          </li>
+          <li class="about-me-swiper-wrapper-item swiper-slide">
+            <p class="about-me-swiper-btn">React Native</p>
+          </li>
+        </ul>
+      </div>
+      <div class="about-me-swiper-btn-next swiper-button-next">
+        <svg class="about-me-img-button" width="40" height="40" fill="FAFAFA">
+          <use href="sprite.svg#icon-arrow-narrow-left"></use>
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -261,7 +353,7 @@
   </div>
 </section>
 
-      <section class="project">
+      <!-- <section class="project">
   <div class="container">
     <h2 class="project-title">PROJECT</h2>
     <div class="swiper project-swiper">
@@ -295,7 +387,7 @@
                 <div class="projects-item">
                   <img
                     class="item2-img"
-                    src="/project-group-19/assets/slideTwoDog-af7c5d45.png"
+                    src="./img/project-img/slideTwoDog.png"
                     alt=""
                   />
                 </div>
@@ -332,7 +424,7 @@
                 <div class="projects-item">
                   <img
                     class="item2-img"
-                    src="/project-group-19/assets/slideThreeFamily-5bbdf170.png"
+                    src="./img/project-img/slideThreeFamily.png"
                     alt=""
                   />
                 </div>
@@ -369,7 +461,7 @@
                 <div class="projects-item">
                   <img
                     class="item2-img"
-                    src="/project-group-19/assets/slideOnePhone-1e66a563.png"
+                    src="./img/project-img/slideOnePhone.png"
                     alt=""
                   />
                 </div>
@@ -399,6 +491,81 @@
       </div>
     </div>
   </div>
+</section> -->
+<section class="projects" id="projects-id">
+  <div class="container">
+    <h2 class="projects-title">Projects</h2>
+    <div class="projects-sections">
+      <div class="projects-top-section">
+        <ul class="technologies-list">
+          <li class="technologies-list-item">#react</li>
+          <li class="technologies-list-item">#js</li>
+          <li class="technologies-list-item">#node js</li>
+          <li class="technologies-list-item">#git</li>
+        </ul>
+        <p class="projects-text">
+          Programming Across Borders: Ideas, Technologies, Innovations
+        </p>
+        <a class="projects-btn" href="" target="blank">See project</a>
+      </div>
+      <div class="projects-bottom-section swiper projSwiper">
+        <ul class="projects-list swiper-wrapper">
+          <li class="projects-list-item swiper-slide">
+            <picture class="project-img">
+              <img src="../img/project-img/slideOnePhone.png" alt="" />
+            </picture>
+          </li>
+          <li class="projects-list-item swiper-slide">
+            <picture>
+              <img src="../img/project-img/slideThreeFamily.png" alt="" />
+            </picture>
+          </li>
+          <li class="projects-list-item swiper-slide">
+            <picture>
+              <img src="../img/project-img/slideTwoDog.png" alt="" />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="arrows swiper-buttons">
+      <button
+        class="arrow-btn prev-btn-proj"
+        type="button"
+        aria-label="Next photo"
+      >
+        <svg class="arrow-icon">
+          <use href="../public/sprite.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </button>
+      <button
+        class="arrow-btn next-btn-proj"
+        type="button"
+        aria-label="Previos photo"
+      >
+        <svg class="arrow-icon">
+          <use href="../public/sprite.svg#icon-arrow-narrow-left"></use>
+        </svg>
+      </button>
+    </div> -->
+    <div class="swiper-button-wrap">
+      <div class="swiper-button-prev swiper-reviews-button-prev swiper-projects-button-prev">
+        <svg
+          class="reviews-img-button left-button"
+          width="24"
+          height="24"
+          fill="FAFAFA"
+        >
+          <use href="sprite.svg#icon-arrow-narrow-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next swiper-reviews-button-next swiper-projects-button-next">
+        <svg class="reviews-img-button" width="24" height="24" fill="FAFAFA">
+          <use href="sprite.svg#icon-arrow-narrow-left"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
 </section>
 
       <section class="section-faq">
@@ -408,7 +575,20 @@
       <li class="ac item-faq">
         <h3 class="ac-header header-faq">
           <button type="button" class="ac-trigger trigger-faq">
-            What programming languages are most often used in your project?
+            <span class="span-faq-btn-ac"
+              >What programming languages are most often used in your
+              project?</span
+            >
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-faq">
@@ -422,7 +602,19 @@
       <li class="ac item-faq">
         <h3 class="ac-header header-faq">
           <button type="button" class="ac-trigger trigger-faq">
-            What are the deadlines for the project?
+            <span class="span-faq-btn-ac"
+              >What are the deadlines for the project?</span
+            >
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-faq">
@@ -438,7 +630,19 @@
       <li class="ac item-faq">
         <h3 class="ac-header header-faq">
           <button type="button" class="ac-trigger trigger-faq">
-            What payment methods do you accept?
+            <span class="span-faq-btn-ac"
+              >What payment methods do you accept?</span
+            >
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-faq">
@@ -452,7 +656,17 @@
       <li class="ac item-faq">
         <h3 class="ac-header header-faq">
           <button type="button" class="ac-trigger trigger-faq">
-            How can I contact you?
+            <span class="span-faq-btn-ac">How can I contact you?</span>
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-faq">
@@ -466,7 +680,19 @@
       <li class="ac item-faq">
         <h3 class="ac-header header-faq">
           <button type="button" class="ac-trigger trigger-faq">
-            Do you provide advice or support?
+            <span class="span-faq-btn-ac">
+              Do you provide advice or support?</span
+            >
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-faq">
@@ -482,8 +708,20 @@
       <li class="ac item-faq">
         <h3 class="ac-header header-faq">
           <button type="button" class="ac-trigger trigger-faq">
-            What does the process of developing a software product look like
-            from idea to implementation?
+            <span class="span-faq-btn-ac span-longer-width">
+              What does the process of developing a software product look like
+              from idea to implementation?</span
+            >
+            <div class="svg-about-div">
+              <svg
+                class="accordion-button-icon-about-me clicked"
+                width="18"
+                height="18"
+                aria-label="accordion open close button icon"
+              >
+                <use href="../public/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
           </button>
         </h3>
         <div class="ac-panel panel-faq">
@@ -756,35 +994,40 @@
   </div>
 </section>
 
-      <section class="footer">
+      <section class="footer" id="order">
   <div class="footer-bgrd">
     <div class="container">
-      <div class="footer-wraper"></div>
-      <div class="footer-header">
-        <a href="/" class="footer-logo">
-          <picture>
-            <source
-              srcset="data:image/png;base64,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 1x, /project-group-19/assets/image-mob-2x-9f274051.png 2x"
-              media="(max-width: 768px)" />
-            <source
-              srcset="/project-group-19/assets/image-1x-7a79895d.png 1x, /project-group-19/assets/image-2x-ce9cfebd.png 2x"
-              media="(min-width: 768px)" />
-            <img
-              src="/project-group-19/assets/image-1x-7a79895d.png"
-              alt="portrait"
-              width="70"
-              height="70"
-          /></picture>
-        </a>
-        <h2 class="footer-title">
-          <span class="start-title-span"
-            >Let's <span class="footer-span">work</span></span
-          >
-          <span> together</span>
-        </h2>
-      </div>
-      <form class="footer-form">
-        <label for="email">
+      <div class="footer-wraper">
+        <div class="footer-header">
+          <a href="/" class="footer-logo">
+            <picture>
+              <source
+                srcset="
+                  ../img/footer/image-mob-1x.png 1x,
+                  ../img/footer/image-mob-2x.png 2x
+                "
+                media="(max-width: 768px)" />
+              <source
+                srcset="
+                  ../img/footer/image-1x.png 1x,
+                  ../img/footer/image-2x.png 2x
+                "
+                media="(min-width: 768px)" />
+              <img
+                src="../img/footer/image-1x.png"
+                alt="portrait"
+                width="70"
+                height="70"
+            /></picture>
+          </a>
+          <h2 class="footer-title">
+            <span class="start-title-span"
+              >Let's <span class="footer-span">work</span></span
+            >
+            <span> together</span>
+          </h2>
+        </div>
+        <form class="footer-form">
           <input
             type="email"
             name="email"
@@ -794,8 +1037,6 @@
             required
             autofocus
           />
-        </label>
-        <label for="comments">
           <input
             class="test"
             type="text"
@@ -804,20 +1045,20 @@
             placeholder="comments"
             required
           />
-        </label>
-        <button type="submit" class="footer-btn">Send</button>
-      </form>
+          <button type="submit" class="footer-btn">Send</button>
+        </form>
 
-      <ul class="footer-contacts">
-        <li class="footer-item">
-          <a href="mailto:" class="footer-link">lloydjefferson@gmail.com</a>
-        </li>
-        <li class="footer-item">
-          <a href="tel:+3801111111111" class="footer-link"
-            >+380 11 1111 11 11</a
-          >
-        </li>
-      </ul>
+        <ul class="footer-contacts">
+          <li class="footer-item">
+            <a href="mailto:" class="footer-link">lloydjefferson@gmail.com</a>
+          </li>
+          <li class="footer-item">
+            <a href="tel:+3801111111111" class="footer-link"
+              >+380 11 1111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
