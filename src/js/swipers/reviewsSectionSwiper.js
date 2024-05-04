@@ -4,13 +4,12 @@ import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import getReviews from '../interfaces/interfaceHttp';
 
 let reviewsSwiper;
 const reviewsListElem = document.querySelector('.reviews-swiper-wrapper');
 
 initCardEditor();
-
-import getReviews from '../interfaces/interfaceHttp';
 
 async function initCardEditor() {
   try {
@@ -18,7 +17,6 @@ async function initCardEditor() {
     const markUp = reviewsTemplate(result);
     reviewsListElem.insertAdjacentHTML('afterbegin', markUp);
     initSwiper();
-
   } catch {
     iziToast.error({
       position: 'topCenter',
